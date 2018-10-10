@@ -1,0 +1,16 @@
+@mixin transition {
+    transition: 0.2s ease-in;
+  }
+
+@mixin img100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin button-bg($bg) {
+  background-color: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    @include transition;
+  }
+}
