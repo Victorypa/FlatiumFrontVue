@@ -57,21 +57,23 @@
 
             <div class="row col-12">
               <div class="row justify-content-between align-items-center col-12 py-4 pr-0">
-                <div class="col-8">
+                <div class="col-6">
                   <input type="text" class="form-control" placeholder="Наименование">
                 </div>
 
-              <div class="col-md-4 pr-0">
-                  <div class="form-group d-flex align-items-center justify-content-end mb-0">          
-              <select class="form-control col-3">
+              <div class="col-md-6 pr-0">
+                  <div class="form-group d-flex align-items-center justify-content-end mb-0">    
+                    <input type="text" class="form-control col-3 ml-2" placeholder="Цена прайса">      
+                    <input type="text" class="form-control col-2 ml-2" placeholder="Кол-во/уп.">      
+              <select class="form-control col-2 ml-2">
                 <option selected disabled>Ед/изм.</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
               </select>
             
-                    <input type="text" class="form-control col-3 ml-2" placeholder="Расход/м2">
-                    <input type="text" class="form-control col-2 ml-2" placeholder="Цена">
+                    <input type="text" class="form-control col-2 ml-2" placeholder="Расход/м2">
+                      <div class="total-sum col-auto text-right pr-0 pl-4">1204,00</div>
                   </div>
                 </div>
               </div>
@@ -80,7 +82,7 @@
                 +Добавить материал
               </div>
 
-              <div class="row justify-content-between align-items-center col-12 pr-0">
+             <div class="row justify-content-between align-items-center col-12">
                 <label class="col-8">
                   <div class="form-check">
                     <input class="form-check-input" id="customCheck1" type="checkbox">
@@ -104,7 +106,7 @@
                 </div>
               </div>
 
-             <div class="row justify-content-between align-items-center col-12 pr-0">
+             <div class="row justify-content-between align-items-center col-12">
                 <label class="col-8">
                   <div class="form-check">
                     <input class="form-check-input" id="customCheck1" type="checkbox">
