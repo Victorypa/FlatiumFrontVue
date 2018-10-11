@@ -57,7 +57,7 @@
 
             <div class="row col-12 px-0">
               <div class="row justify-content-between align-items-center col-12 py-4">
-                <div class="col-6">
+                <div class="col-6 pr-0">
                   <input type="text" class="form-control" placeholder="Наименование">
                 </div>
                  
@@ -95,7 +95,9 @@
                   </div>
                 </div>
                  
-                 <div class="col-2">
+                <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
+                    <div class="total-sum col-6">1204,00</div> 
+                    <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
                  </div>
 
               <div class="col-md-4 px-0">
@@ -124,7 +126,10 @@
                   </div>
                 </div>
                  
-                 <div class="col-2"></div>
+                <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
+                    <div class="total-sum col-6">1204,00</div> 
+                    <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
+                 </div>
 
               <div class="col-md-4 px-0">
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
