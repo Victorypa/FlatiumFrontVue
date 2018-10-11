@@ -1,5 +1,5 @@
 <template>
-<!-- <header class="header">
+<header class="header">
 
     <div class="container-fluid">
 
@@ -26,8 +26,8 @@
         </div>
       </div>
     </div>
-  </header> -->
-  <p>aahjkaf</p>
+  </header>
+
 </template>
 
 <style lang="scss" scoped>

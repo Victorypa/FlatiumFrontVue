@@ -337,7 +337,8 @@
       }
     }
     .form-control {
-      padding: 22px 20px;
+      color: 666;
+      height: 45px; 
     }
     .custom-control {
       padding-left: 1.25rem;
