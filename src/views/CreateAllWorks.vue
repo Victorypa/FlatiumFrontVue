@@ -5,7 +5,7 @@
 
   <div class="create-floor-work">
 
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="row">
         <div class="sidebar col-2 px-0">
 
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="col-md-4 text-right d-flex">
-                  <button type="button" class="primary-button primary-button--outline col-5">Назад к смете</button>
+                  <button type="button" class="primary-button primary-button--outline col-6">Назад к смете</button>
                   <button type="button" class="primary-button col-6 ml-2">Сохранить</button>
                 </div>
 
@@ -55,25 +55,29 @@
               </form>
             </div>
 
-            <div class="row col-12">
-              <div class="row justify-content-between align-items-center col-12 py-4 pr-0">
+            <div class="row col-12 px-0">
+              <div class="row justify-content-between align-items-center col-12 py-4">
                 <div class="col-6">
                   <input type="text" class="form-control" placeholder="Наименование">
                 </div>
+                 
+                 <div class="col-2 d-flex pr-0">
+                    <input type="text" class="form-control" placeholder="Цена">      
+                    <input type="text" class="form-control ml-2" placeholder="Кол-во">  
+                 </div>
 
-              <div class="col-md-6 pr-0">
-                  <div class="form-group d-flex align-items-center justify-content-end mb-0">    
-                    <input type="text" class="form-control col-3 ml-2" placeholder="Цена прайса">      
-                    <input type="text" class="form-control col-2 ml-2" placeholder="Кол-во/уп.">      
-              <select class="form-control col-2 ml-2">
-                <option selected disabled>Ед/изм.</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            
-                    <input type="text" class="form-control col-2 ml-2" placeholder="Расход/м2">
-                      <div class="total-sum col-auto text-right pr-0 pl-4">1204,00</div>
+              <div class="col-md-4 px-0">
+                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
+              
+                    <select class="form-control col-4 ml-2">
+                      <option selected disabled>Ед/изм.</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
               </div>
@@ -81,55 +85,67 @@
               <div class="add-work">
                 +Добавить материал
               </div>
-
-             <div class="row justify-content-between align-items-center col-12">
-                <label class="col-8">
-                  <div class="form-check">
+              <div class="row justify-content-between align-items-center col-12 py-2">
+                <div class="col-6">
+                     <div class="form-check ">
                     <input class="form-check-input" id="customCheck1" type="checkbox">
                     <label class="form-check-label" for="customCheck1">
                       Фанера ФК 8х1525х1525 мм, сорт 4/4
                     </label>
                   </div>
-                </label>
+                </div>
+                 
+                 <div class="col-2">
+                 </div>
 
-                <div class="col-md-4 pr-0">
-                  <div class="form-group d-flex align-items-center justify-content-end">
-                    <select class="form-control col-3">
+              <div class="col-md-4 px-0">
+                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
+              
+                    <select class="form-control col-4 ml-2">
                       <option selected disabled>Ед/изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                    <input type="text" class="form-control col-3 ml-2" placeholder="Расход/м2">
-                    <div class="ml-2 total-sum col-2">1204,00</div>
+                  
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
               </div>
 
-             <div class="row justify-content-between align-items-center col-12">
-                <label class="col-8">
-                  <div class="form-check">
+              <div class="row justify-content-between align-items-center col-12 py-2">
+                <div class="col-6">
+                     <div class="form-check ">
                     <input class="form-check-input" id="customCheck1" type="checkbox">
                     <label class="form-check-label" for="customCheck1">
                       Фанера ФК 8х1525х1525 мм, сорт 4/4
                     </label>
                   </div>
-                </label>
+                </div>
+                 
+                 <div class="col-2"></div>
 
-                <div class="col-md-4 pr-0">
-                  <div class="form-group d-flex align-items-center justify-content-end">
-                    <select class="form-control col-3">
+              <div class="col-md-4 px-0">
+                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
+              
+                    <select class="form-control col-4 ml-2">
                       <option selected disabled>Ед/изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                    <input type="text" class="form-control col-3 ml-2" placeholder="Расход/м2">
-                    <div class="ml-2 total-sum col-2">1204,00</div>
+                  
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
               </div>
+
             </div>
+            </div>
+
+             
           </div>
 
         </div>
@@ -137,7 +153,6 @@
     </div>
   </div>
 
-</div>
 
 </template>
 
