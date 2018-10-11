@@ -63,20 +63,20 @@
                  
                  <div class="col-2 d-flex pr-0">
                     <input type="text" class="form-control" placeholder="Цена">      
-                    <input type="text" class="form-control ml-2" placeholder="Кол-во">  
+                    <input type="text" class="form-control ml-2" placeholder="Ед.уп">  
                  </div>
 
               <div class="col-md-4 px-0">
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
-                      <option selected disabled>Ед/изм.</option>
+                      <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
                   
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
                       <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
@@ -102,13 +102,13 @@
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
-                      <option selected disabled>Ед/изм.</option>
+                      <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
                   
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
                       <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
@@ -130,13 +130,13 @@
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
-                      <option selected disabled>Ед/изм.</option>
+                      <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
                   
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход/м2">
+                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
                       <div class="total-sum col-3 text-right pr-0">1204,00</div>
                   </div>
                 </div>
