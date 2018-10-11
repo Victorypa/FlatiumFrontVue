@@ -86,7 +86,15 @@
                 <div class="col-10">
                   <div class="form-group d-flex align-items-center">
                     <input type="text" class="form-control" placeholder="Имя клиента">
-                    <input type="text" class="form-control" placeholder="Имя менеджера">
+            <div class="col-3">
+                      <select class="form-control">
+                        <option selected disabled>Имя менеджера</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
                     <input type="text" class="form-control" placeholder="Телефон менеджера">
                     <input type="text" class="form-control" placeholder="№ Договора">
                   </div>

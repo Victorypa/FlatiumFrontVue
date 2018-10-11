@@ -15,8 +15,9 @@ export default {};
 
 <style lang="scss">
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-// @import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "assets/scss/vars.scss";
 @import "../src/assets/scss/main.scss";
+// @import "../src/assets/scss/fonts/FontAwesome/fontawesome.min.css";
 
 </style>

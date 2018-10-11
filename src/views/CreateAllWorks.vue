@@ -1,34 +1,7 @@
 <template>
 
 <div>
-  <header class="header">
-
-    <div class="container-fluid">
-
-      <div class="row align-items-center justify-content-between header__top">
-
-        <div class="header__logo col-md-2">
-          <a href="#">
-            <img class="header__logo--img" src="../assets/img/logo.svg" alt="">
-          </a>
-        </div>
-
-        <div class="col-2 text-right">
-
-          <button type="button" class="dropdown-toggle transparent-button user-button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img src="../assets/img/user.svg" alt="user-icon">
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Профиль</a>
-            <a class="dropdown-item" href="#">Выход</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
+  <header></header>
 
   <div class="create-floor-work">
 
@@ -119,13 +92,12 @@
 
                 <div class="col-md-4 pr-0">
                   <div class="form-group d-flex align-items-center justify-content-end">
-              <select class="form-control col-3">
-                <option selected disabled>Ед/изм.</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-        
+                    <select class="form-control col-3">
+                      <option selected disabled>Ед/изм.</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
                     <input type="text" class="form-control col-3 ml-2" placeholder="Расход/м2">
                     <div class="ml-2 total-sum col-2">1204,00</div>
                   </div>
@@ -166,6 +138,10 @@
 </div>
 
 </template>
+
+<script>
+export default {};
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/vars.scss";
@@ -289,7 +265,3 @@
   margin-top: 25px;
 }
 </style>
-
-<script>
-export default {};
-</script>
