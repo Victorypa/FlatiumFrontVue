@@ -19,7 +19,6 @@
           </button>
 
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Профиль</a>
             <a class="dropdown-item" href="#">Выход</a>
           </div>
 

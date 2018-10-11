@@ -66,7 +66,7 @@
                     <input type="text" class="form-control ml-2" placeholder="Ед.уп">  
                  </div>
 
-              <div class="col-md-4 px-0">
+              <div class="col-md-4 pl-0">
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
@@ -77,7 +77,10 @@
                     </select>
                   
                     <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
+                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
+                        <button class="add-button add-button--remove ml-auto" title="Удалить материал">
+                        <img src="../assets/img/del.svg" alt="add-button">
+                      </button>
                   </div>
                 </div>
               </div>
@@ -85,6 +88,7 @@
               <div class="add-work">
                 +Добавить материал
               </div>
+
               <div class="row justify-content-between align-items-center col-12 py-2">
                 <div class="col-6">
                      <div class="form-check ">
@@ -100,7 +104,7 @@
                     <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
                  </div>
 
-              <div class="col-md-4 px-0">
+              <div class="col-md-4 pl-0">
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
@@ -111,7 +115,7 @@
                     </select>
                   
                     <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
+                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
                   </div>
                 </div>
               </div>
@@ -131,7 +135,7 @@
                     <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
                  </div>
 
-              <div class="col-md-4 px-0">
+              <div class="col-md-4 pl-0">
                   <div class="form-group d-flex align-items-center mb-0 justify-around">    
               
                     <select class="form-control col-4 ml-2">
@@ -142,7 +146,7 @@
                     </select>
                   
                     <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-3 text-right pr-0">1204,00</div>
+                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
                   </div>
                 </div>
               </div>
@@ -279,6 +283,33 @@ export default {};
     color: $main-color;
   }
 }
+
+ .add-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    img {
+      width: 35px;
+      border-radius: 50%;
+      @include transition;
+      &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+    }
+    &--remove {
+      color: #ccc;
+      &:hover {
+        color: $main-color;
+      }
+      img {
+        width: 15px;
+
+      }
+    }
+  }
 
 .bt {
   border-top: 1px solid #ccc;
