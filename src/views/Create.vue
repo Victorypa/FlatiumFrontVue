@@ -386,12 +386,19 @@
   </div>
 </template>
 
+<script>
+import basicheader from  './partials/BasicHeader'
+import sidebar from  './partials/Sidebar'
+export default {
+  components: {
+    basicheader, 
+    sidebar
+  }
+};
+</script>
+
 <style lang="scss" scoped>
 @import "../assets/scss/vars.scss";
-
-// @import "../assets/scss/mixins/font-face";
-
-// @include font-face("tahoma", "../fonts/Tahoma/Tahoma");
 
 .fixed-part {
   position: fixed;
@@ -727,7 +734,3 @@
   color: #ccc;
 }
 </style>
-
-<script>
-export default {};
-</script>

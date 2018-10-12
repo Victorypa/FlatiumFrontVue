@@ -145,12 +145,14 @@
 </template>
 
 <script>
-// import BasicHeader from './partials/BasicHeader.vue'
-// export default {
-//   components: {
-//     basicheader
-//   }
-// };
+import basicheader from  './partials/BasicHeader'
+import sidebar from  './partials/Sidebar'
+export default {
+  components: {
+    basicheader, 
+    sidebar
+  }
+};
 </script>
 
 <style lang="scss" scoped>
