@@ -1,55 +1,13 @@
 <template>
 <div>
-  <header class="header">
 
-    <div class="container-fluid">
+  <basicheader></basicheader>
 
-      <div class="row align-items-center justify-content-between header__top">
-
-        <div class="header__logo col-md-2">
-          <a href="#">
-            <img class="header__logo--img" src="../assets/img/logo.svg" alt="">
-          </a>
-        </div>
-
-        <div class="col-2 text-right">
-
-          <button type="button" class="dropdown-toggle transparent-button user-button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img src="../assets/img/user.svg" alt="user-icon">
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Профиль</a>
-            <a class="dropdown-item" href="#">Выход</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-    <div class="timetable">
+  <div class="timetable">
 
     <div class="container-fluid">
       <div class="row">
-        <div class="sidebar col-2 px-0">
-
-          <div class="sidebar-items">
-
-            <div class="sidebar-list">
-              <a href="#">Все сметы</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="#">Новая смета</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="#">Архив смет</a>
-            </div>
-          </div>
-        </div>
+        <sidebar></sidebar>
 
         <div class="col-md-10">
 
@@ -145,59 +103,59 @@
                   <input type="text" class="w-100" name="dates">
                 </div>
 
-                <div class="main-subtitle main-subtitle--fz col-12">Возведение перегородок</div>
-                <div class="col-12 py-2">
-                  <input type="text" class="w-100" name="dates">
+                  <div class="main-subtitle main-subtitle--fz col-12">Возведение перегородок</div>
+                  <div class="col-12 py-2">
+                    <input type="text" class="w-100" name="dates">
                 </div>
 
-                <div class="main-subtitle main-subtitle--fz col-12">Устройство пола (черновые
-                  работы)</div>
-                <div class="col-12  py-2">
-                  <input type="text" class="w-100" name="dates">
+                    <div class="main-subtitle main-subtitle--fz col-12">Устройство пола (черновые
+                      работы)</div>
+                    <div class="col-12  py-2">
+                      <input type="text" class="w-100" name="dates">
                 </div>
 
-              </div>
-              <div class="row col-6">
-                <div class="main-subtitle main-subtitle--border col-12 pt-3 mb-4">
-                  <div class="bb pb-3">
-                    Факт
+                    </div>
+                    <div class="row col-6">
+                      <div class="main-subtitle main-subtitle--border col-12 pt-3 mb-4">
+                        <div class="bb pb-3">
+                          Факт
+                        </div>
+                      </div>
+                      <div class="main-subtitle main-subtitle--fz col-12">Демонтажные работы</div>
+
+                      <div class="col-12 py-2">
+                        <input type="text" class="w-100" name="dates">
+                </div>
+
+                        <div class="main-subtitle main-subtitle--fz col-12">Возведение перегородок</div>
+                        <div class="col-12 py-2">
+                          <input type="text" class="w-100" name="dates">
+                </div>
+
+                          <div class="main-subtitle main-subtitle--fz col-12">Устройство пола (черновые
+                            работы)</div>
+                          <div class="col-12 py-2">
+                            <input type="text" class="w-100" name="dates">
+                </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
                   </div>
-                </div>
-                <div class="main-subtitle main-subtitle--fz col-12">Демонтажные работы</div>
 
-                <div class="col-12 py-2">
-                  <input type="text" class="w-100" name="dates">
-                </div>
-
-                <div class="main-subtitle main-subtitle--fz col-12">Возведение перегородок</div>
-                <div class="col-12 py-2">
-                  <input type="text" class="w-100" name="dates">
-                </div>
-
-                <div class="main-subtitle main-subtitle--fz col-12">Устройство пола (черновые
-                  работы)</div>
-                <div class="col-12 py-2">
-                  <input type="text" class="w-100" name="dates">
                 </div>
 
               </div>
+
             </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
 </template>
 
 <style lang="scss" scoped>
 @import "../assets/scss/vars.scss";
+
 .sidebar {
   min-height: 100vh;
 }
@@ -220,58 +178,73 @@
       margin-bottom: 15px;
     }
   }
+
   .owl-carousel-wrapper {
     padding-top: 285px;
   }
+
   .owl-carousel {
     padding-left: 15px;
+
     .owl-next,
     .owl-prev {
       position: absolute;
       bottom: -30%;
       cursor: pointer;
     }
+
     .owl-prev {
       left: -1%;
     }
+
     .owl-next {
       right: -2%;
     }
+
     .owl-nav {
       button {
         background-color: #fff;
         font-size: 30px;
+
         &:hover {
           background-color: #fff;
         }
+
         &:focus {
           outline: none;
         }
       }
+
       span {
         color: #666;
         @include transition;
+
         &:active {
           background-color: #fff;
         }
+
         &:hover {
           color: $main-color;
         }
       }
     }
+
     .owl {
       &-dots {
         display: none;
       }
+
       &-stage-outer {
         margin-right: 15px;
       }
+
       &-item {
         width: auto !important;
         min-width: 130px;
       }
     }
   }
+
   .bb {
     border-bottom: 1px solid #ccc;
   }
@@ -289,9 +262,11 @@
     border: none;
     cursor: pointer;
     @include transition;
+
     &:hover {
       color: $main-color;
     }
+
     &.active {
       display: inline-block;
       color: $main-color;

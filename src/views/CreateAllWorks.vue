@@ -1,31 +1,13 @@
 <template>
-
 <div>
-  <header></header>
+
+  <basicheader></basicheader>
 
   <div class="create-floor-work">
 
     <div class="container-fluid px-0">
       <div class="row">
-        <div class="sidebar col-2 px-0">
-
-          <div class="sidebar-items">
-
-            <div class="sidebar-list">
-              <a href="#">Все сметы</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="#">Новая смета</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="#">Архив смет</a>
-            </div>
-
-          </div>
-        </div>
-
+        <sidebar></sidebar>
         <div class="col-md-10 bg px-0">
           <div class="container-fluid px-0">
             <div class="fixed-part col-10 shadow bg-white rounded">
@@ -60,112 +42,115 @@
                 <div class="col-6 pr-0">
                   <input type="text" class="form-control" placeholder="Наименование">
                 </div>
-                 
-                 <div class="col-2 d-flex pr-0">
-                    <input type="text" class="form-control" placeholder="Цена">      
-                    <input type="text" class="form-control ml-2" placeholder="Ед.уп">  
+
+                  <div class="col-2 d-flex pr-0">
+                    <input type="text" class="form-control" placeholder="Цена">
+                    <input type="text" class="form-control ml-2" placeholder="Ед.уп">
                  </div>
 
-              <div class="col-md-4 pl-0">
-                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
-              
-                    <select class="form-control col-4 ml-2">
+                    <div class="col-md-4 pl-0">
+                      <div class="form-group d-flex align-items-center mb-0 justify-around">
+
+                        <select class="form-control col-4 ml-2">
                       <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                  
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
+
+                        <input type="text" class="form-control col-3 ml-2" placeholder="Расход">
+                        <div class="total-sum col-2 text-right pr-0">1204,00</div>
                         <button class="add-button add-button--remove ml-auto" title="Удалить материал">
                         <img src="../assets/img/del.svg" alt="add-button">
                       </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="add-work">
-                +Добавить материал
-              </div>
+                  <div class="add-work">
+                    +Добавить материал
+                  </div>
 
-              <div class="row justify-content-between align-items-center col-12 py-2">
-                <div class="col-6">
-                     <div class="form-check ">
-                    <input class="form-check-input" id="customCheck1" type="checkbox">
-                    <label class="form-check-label" for="customCheck1">
+                  <div class="row justify-content-between align-items-center col-12 py-2">
+                    <div class="col-6">
+                      <div class="form-check ">
+                        <input class="form-check-input" id="customCheck1" type="checkbox">
+                        <label class="form-check-label" for="customCheck1">
                       Фанера ФК 8х1525х1525 мм, сорт 4/4
                     </label>
-                  </div>
-                </div>
-                 
-                <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
-                    <div class="total-sum col-6">1204,00</div> 
-                    <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
+                      </div>
+                    </div>
+
+                    <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
+                      <div class="total-sum col-6">1204,00</div>
+                      <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">
                  </div>
 
-              <div class="col-md-4 pl-0">
-                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
-              
-                    <select class="form-control col-4 ml-2">
+                      <div class="col-md-4 pl-0">
+                        <div class="form-group d-flex align-items-center mb-0 justify-around">
+
+                          <select class="form-control col-4 ml-2">
                       <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                  
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="row justify-content-between align-items-center col-12 py-2">
-                <div class="col-6">
-                     <div class="form-check ">
-                    <input class="form-check-input" id="customCheck1" type="checkbox">
-                    <label class="form-check-label" for="customCheck1">
+                          <input type="text" class="form-control col-3 ml-2" placeholder="Расход">
+                          <div class="total-sum col-2 text-right pr-0">1204,00</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row justify-content-between align-items-center col-12 py-2">
+                      <div class="col-6">
+                        <div class="form-check ">
+                          <input class="form-check-input" id="customCheck1" type="checkbox">
+                          <label class="form-check-label" for="customCheck1">
                       Фанера ФК 8х1525х1525 мм, сорт 4/4
                     </label>
-                  </div>
-                </div>
-                 
-                <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
-                    <div class="total-sum col-6">1204,00</div> 
-                    <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">  
-                 </div>
+                        </div>
+                      </div>
 
-              <div class="col-md-4 pl-0">
-                  <div class="form-group d-flex align-items-center mb-0 justify-around">    
-              
-                    <select class="form-control col-4 ml-2">
+                      <div class="col-2 d-flex pr-2 align-items-center justify-content-between">
+                        <div class="total-sum col-6">1204,00</div>
+                        <input type="text" class="form-control ml-2 col-6" placeholder="Ед.уп">
+                </div>
+
+                        <div class="col-md-4 pl-0">
+                          <div class="form-group d-flex align-items-center mb-0 justify-around">
+
+                            <select class="form-control col-4 ml-2">
                       <option selected disabled>Ед.изм.</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                     </select>
-                  
-                    <input type="text" class="form-control col-4 ml-2" placeholder="Расход">
-                      <div class="total-sum col-2 text-right pr-0">1204,00</div>
-                  </div>
-                </div>
-              </div>
 
+                            <input type="text" class="form-control col-3 ml-2" placeholder="Расход">
+                            <div class="total-sum col-2 text-right pr-0">1204,00</div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-            </div>
-             
           </div>
-
         </div>
-      </div>
-    </div>
-  </div>
-
-
 </template>
 
 <script>
-export default {};
+// import BasicHeader from './partials/BasicHeader.vue'
+// export default {
+//   components: {
+//     basicheader
+//   }
+// };
 </script>
 
 <style lang="scss" scoped>
@@ -174,6 +159,7 @@ export default {};
 .sidebar {
   min-height: 100vh;
 }
+
 .fixed-part {
   position: fixed;
 
@@ -188,15 +174,18 @@ export default {};
   &__content {
     padding-top: 200px;
   }
+
   .form-check-label {
     &:hover {
       color: $main-color;
     }
   }
+
   .form-check-label,
   .total-sum {
     color: #666;
   }
+
   label {
     margin-bottom: 0;
   }
@@ -204,6 +193,7 @@ export default {};
 
 .fa-search {
   color: $main-color;
+
   &::before {
     position: absolute;
     top: 10px;
@@ -216,10 +206,12 @@ export default {};
   &-label {
     @include transition;
     cursor: pointer;
+
     &:before {
       border: 1px solid $ccc;
       border-radius: 0;
     }
+
     &::after {
       position: absolute;
       left: -18px;
@@ -228,12 +220,13 @@ export default {};
       font-size: 11px;
       color: $main-color;
     }
+
     &:hover {
       color: $button-hover;
     }
   }
 
-  input[type="checkbox"]:checked + label::after {
+  input[type="checkbox"]:checked+label::after {
     font-family: "FontAwesome";
     content: "\f00c";
   }
@@ -244,6 +237,7 @@ export default {};
     vertical-align: top;
     position: relative;
     padding-left: 5px;
+
     &::before {
       content: "";
       position: absolute;
@@ -268,6 +262,7 @@ export default {};
       }
     }
   }
+
   &-label {
     &--pt::after {
       top: 5px;
@@ -279,37 +274,43 @@ export default {};
   cursor: pointer;
   color: #666;
   padding-left: 54px;
+
   &:hover {
     color: $main-color;
   }
 }
 
- .add-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    &:focus {
-      outline: none;
-    }
-    img {
-      width: 35px;
-      border-radius: 50%;
-      @include transition;
-      &:hover {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-      }
-    }
-    &--remove {
-      color: #ccc;
-      &:hover {
-        color: $main-color;
-      }
-      img {
-        width: 15px;
+.add-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-      }
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    width: 35px;
+    border-radius: 50%;
+    @include transition;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
   }
+
+  &--remove {
+    color: #ccc;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    img {
+      width: 15px;
+    }
+  }
+}
 
 .bt {
   border-top: 1px solid #ccc;

@@ -2,58 +2,12 @@
 
 <div>
 
-<header class="header">
-
-    <div class="container-fluid">
-
-      <div class="row align-items-center justify-content-between header__top">
-
-        <div class="header__logo col-md-2">
-          <a href="#">
-            <img class="header__logo--img" src="../assets/img/logo.svg" alt="">
-          </a>
-        </div>
-
-        <div class="col-2 text-right">
-
-          <button type="button" class="dropdown-toggle transparent-button user-button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img src="../assets/img/user.svg" alt="user-icon">
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Профиль</a>
-            <a class="dropdown-item" href="#">Выход</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-
+<basicheader></basicheader>
 
 <div class="estimates">
    <div class="container-fluid">
       <div class="row">
-        <div class="sidebar col-2 px-0">
-
-          <div class="sidebar-items">
-
-            <div class="sidebar-list">
-                <a href="http://localhost:3000/estimates.html">Все сметы</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="http://localhost:3000/create.html">Новая смета</a>
-            </div>
-
-            <div class="sidebar-list">
-              <a href="#">Архив смет</a>
-            </div>
-
-          </div>
-        </div>
+        <sidebar></sidebar>
 
         <div class="col-md-10 px-0 h-100vh">
 

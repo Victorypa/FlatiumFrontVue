@@ -1,13 +1,14 @@
 <template>
+
   <div id="app">
     <router-view/>
   </div>
+
 </template>
 
 
 <script>
 import "../node_modules/popper.js/dist/umd/popper.js";
-// import "../node_modules/bootstrap/js/dist/util.js";
 import "../node_modules/bootstrap/js/dist/dropdown.js";
 
 export default {};

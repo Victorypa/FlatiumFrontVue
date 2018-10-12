@@ -1,8 +1,7 @@
 <template>
-
 <div>
 
- <header class="header">
+  <header class="header">
 
     <div class="container-fluid">
 
@@ -17,7 +16,7 @@
     </div>
   </header>
 
- <div class="login">
+  <div class="login">
     <div class="container">
       <div class="row justify-content-center align-items-center h-100vh">
 
@@ -27,35 +26,34 @@
             <div class="form-group">
               <input type="text" placeholder="Логин" class="form-control">
             </div>
-            <div class="form-group">
-              <input type="Пароль" placeholder="Пароль" class="form-control">
+              <div class="form-group">
+                <input type="Пароль" placeholder="Пароль" class="form-control">
             </div>
-          </div>
+              </div>
 
-          <div class="col-12 pl-1 py-1">
-            <div class="login-remember">
-              <div class="form-check pb-2">
-                <input class="form-check-input" id="customCheck1" type="checkbox">
-                <label class="form-check-label" for="customCheck1">
+              <div class="col-12 pl-1 py-1">
+                <div class="login-remember">
+                  <div class="form-check pb-2">
+                    <input class="form-check-input" id="customCheck1" type="checkbox">
+                    <label class="form-check-label" for="customCheck1">
                   Запомнить меня
                 </label>
+                  </div>
+                </div>
+
               </div>
-            </div>
 
-          </div>
-
-          <div class="col-12">
-            <div class="col-md-8 mx-auto">
-              <button type="button" class="primary-button col-md-12">Войти</button>
+              <div class="col-12">
+                <div class="col-md-8 mx-auto">
+                  <button type="button" class="primary-button col-md-12">Войти</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  </div>
-
-</div>
-
 </template>
 
 <style lang="scss" scoped>
@@ -77,10 +75,12 @@
   &-label {
     @include transition;
     cursor: pointer;
+
     &:before {
       border: 1px solid $ccc;
       border-radius: 0;
     }
+
     &::after {
       position: absolute;
       left: -18px;
@@ -89,13 +89,14 @@
       font-size: 11px;
       color: $main-color;
     }
+
     &:hover {
       color: $button-hover;
     }
   }
 
-  input[type="checkbox"]:checked + label::after,
-  .abc-checkbox input[type="radio"]:checked + label::after {
+  input[type="checkbox"]:checked+label::after,
+  .abc-checkbox input[type="radio"]:checked+label::after {
     font-family: "FontAwesome";
     content: "\f00c";
   }
@@ -106,6 +107,7 @@
     vertical-align: top;
     position: relative;
     padding-left: 5px;
+
     &::before {
       content: "";
       position: absolute;
@@ -121,7 +123,6 @@
     }
   }
 }
-
 </style>
 
 <script>

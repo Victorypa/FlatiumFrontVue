@@ -26,10 +26,4 @@
       </div>
     </div>
   </header>
-
 </template>
-
-<style lang="scss" scoped>
-@import "../../assets/scss/vars.scss";
-@import "../../assets/scss/main.scss";
-</style>
