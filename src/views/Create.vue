@@ -11,18 +11,23 @@
         <div class="col-md-10 px-0">
           <div class="row col-10 fixed-part shadow bg-white rounded align-items-center">
             <div class="pb-4 d-flex justify-content-between align-items-center w-100">
-              <div class="col-md-8 px-0">
+              <div class="col-md-6 px-0">
                 <h1 class="main-caption ml-0">
                   Создание сметы
                 </h1>
               </div>
 
-              <div class="col-md-4 d-flex px-0 align-items-center">
-                <div class="create__sum col-6">
+              
+
+              <div class="col-md-6 d-flex px-0 align-items-center">
+
+                <div class="col-4"></div>
+
+                <div class="create__sum col-4 pl-0">
                   Итого: 1600 Р
                 </div>
 
-                <div class="col-6 ml-auto">
+                <div class="col-4 pl-0">
                   <button type="button" class="primary-button  w-100">Экспорт в PDF</button>
                 </div>
               </div>
@@ -41,16 +46,16 @@
               <div class="col-md-6 px-0">
                 <fieldset>
                   <div class="form-group d-flex align-items-center justify-content-around">
-                    <div class="custom-control custom-radio">
+                    <div class="custom-control custom-radio col-4">
                       <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
                       <label class="custom-control-label" for="customRadio1">Предчистовая
                         отделка</label>
                     </div>
-                    <div class="custom-control custom-radio">
+                    <div class="custom-control custom-radio col-4">
                       <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                       <label class="custom-control-label" for="customRadio2">Черновая отделка</label>
                     </div>
-                    <div class="custom-control custom-radio">
+                    <div class="custom-control custom-radio col-4">
                       <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
                       <label class="custom-control-label" for="customRadio3">Вторичная
                         жилплощадь</label>
@@ -62,10 +67,10 @@
 
           </div>
           <div class="carousel-wrapper">
-            <div class="row align-items-center pt-4 px-15">
+            <div class="row align-items-center col-12">
 
               <div class="col-8 owl-carousel-wrapper">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme d-flex px-0">
                   <div class="create__features">
                     <div class="create__features-name active">
                       Комната
@@ -94,13 +99,13 @@
                 <img src="../assets/img/plus-circle.svg" alt="add-button">
               </button>
 
-              <div class="col-2 text-right ml-auto">
+              <div class="col-2 text-right ml-auto  pl-0">
                 <button type="button" class="primary-button primary-button--outline w-100" data-toggle="modal"
                   data-target="#myModal2">Удалить</button>
               </div>
             </div>
           </div>
-          <div class="row align-items-center  py-30 shadow bg-white rounded px-15">
+          <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4">
             <div class="col-6">
               <select class="form-control">
                 <option selected disabled>Тип помещения или вид работы</option>
