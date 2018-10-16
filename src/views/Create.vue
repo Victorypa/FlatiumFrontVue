@@ -21,14 +21,17 @@
 
               <div class="col-md-6 d-flex px-0 align-items-center">
 
-                <div class="col-4"></div>
-
-                <div class="create__sum col-4 pl-0">
-                  Итого: 1600 Р
+                <div class="col-4 create__sum pl-0">
+                   Итого: 1600 Р
                 </div>
 
                 <div class="col-4 pl-0">
-                  <button type="button" class="primary-button  w-100">Экспорт в PDF</button>
+                 
+                   <button type="button" class="primary-button  w-100">Экспорт в PDF</button>
+                </div>
+
+                <div class="col-4 pl-0">
+                  <button type="button" class="primary-button  w-100">График</button>
                 </div>
               </div>
             </div>
