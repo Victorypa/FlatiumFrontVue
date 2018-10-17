@@ -8,6 +8,7 @@ import TimetableStartDate from './views/TimetableStartDate.vue'
 import Timetable from './views/Timetable.vue'
 import CreateAllWorks from './views/CreateAllWorks.vue'
 import AdditionMaterials from './views/AdditionMaterials.vue'
+import XtraMaterialsforAddition from './views/XtraMaterialsforAddition.vue'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/additionMaterials',
       name: 'additionMaterials',
       component: AdditionMaterials
+    },
+    {
+      path: '/XtraMaterialsforAddition',
+      name: 'XtraMaterialsforAddition',
+      component: XtraMaterialsforAddition
     },
     
   ]
