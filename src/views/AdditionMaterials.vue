@@ -33,7 +33,7 @@
               </div>
             </div>
 
-<div class="row px-3 py-3">
+<div class="row px-3 pt-3 pb-1">
   <div class="col-md-8">
     <input type="text" placeholder="Название" class="form-control">
   </div>
@@ -59,6 +59,33 @@
       <input type="number" placeholder="цена за ед. измерения" class="form-control col-md-3 form-group__parametres ml-3"></div>
   </div>
 </div>
+<div class="row px-3 pt-3 pb-1">
+  <div class="col-md-8">
+    <input type="text" placeholder="Название" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <div class="d-flex align-items-center justify-content-end">
+      <select class="form-control col-md-3">
+        <option value="1">
+          кв. м
+        </option>
+        <option value="2">
+          м.п
+        </option>
+        <option value="3">
+          шт.
+        </option>
+        <option value="4">
+          изд.
+        </option>
+        <option value="5">
+          м.
+        </option>
+      </select> 
+      <input type="number" placeholder="цена за ед. измерения" class="form-control col-md-3 form-group__parametres ml-3"></div>
+  </div>
+</div>
+
 
             <div class="row col-12 px-0 py-3">
               <div class="add-work">
