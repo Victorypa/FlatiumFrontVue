@@ -17,8 +17,6 @@
                 </h1>
               </div>
 
-              
-
               <div class="col-md-6 d-flex px-0 align-items-center">
 
                 <div class="col-4 create__sum pl-0">

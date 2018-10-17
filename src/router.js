@@ -7,6 +7,7 @@ import Projects from './views/Projects.vue'
 import TimetableStartDate from './views/TimetableStartDate.vue'
 import Timetable from './views/Timetable.vue'
 import CreateAllWorks from './views/CreateAllWorks.vue'
+import AdditionMaterials from './views/AdditionMaterials.vue'
 
 Vue.use(Router)
 
@@ -47,5 +48,11 @@ export default new Router({
       name: 'createallworks',
       component: CreateAllWorks
     },
+    {
+      path: '/additionMaterials',
+      name: 'additionMaterials',
+      component: AdditionMaterials
+    },
+    
   ]
 })
