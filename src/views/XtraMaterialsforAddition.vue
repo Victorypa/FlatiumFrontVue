@@ -1,97 +1,97 @@
+
 <template>
-<div>
+  <div>
 
-  <basicheader></basicheader>
+    <basicheader></basicheader>
 
-  <div class="create-floor-work">
+    <div class="create-floor-work">
 
-    <div class="container-fluid px-0">
-      <div class="row">
-        <sidebar></sidebar>
-        <div class="col-md-10 bg px-0">
-          <div class="container-fluid px-0">
-            <div class="fixed-part col-10 shadow bg-white rounded">
-              <div class="row align-items-center ">
+      <div class="container-fluid px-0">
+        <div class="row">
+          <sidebar></sidebar>
+          <div class="col-md-10 bg px-0">
+            <div class="container-fluid px-0">
+              <div class="fixed-part col-10 shadow bg-white rounded">
+                <div class="row align-items-center ">
 
-                <div class="col-md-8">
-                  <h2 class="main-caption">
-                    Выбор материалов
-                  </h2>
+                  <div class="col-md-8">
+                    <h2 class="main-caption">
+                      Выбор материалов
+                    </h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row create-floor-work__content col-12">
-                          <div class="col-12">
-                    <div class="main-subtitle pb-4">
-                  Название работы
+              <div class="row create-floor-work__content col-12">
+                <div class="col-12">
+                  <div class="main-subtitle pb-4">
+                    Название работы
+                  </div>
                 </div>
-            </div>
-              <form class="col-12">
-                <div class="input-group">
-                  <input class="form-control py-2" placeholder="Введите навание материала ">
-                  <i class="fa fa-search"></i>
-                </div>
-              </form>
-            </div>
-
-            <div class="row col-12 px-0 py-3">
-         
-                  <div class="row justify-content-between align-items-center col-12 py-2 pb-3 bb">
-                    <div class="col-8">
-                      <div class="form-check ">
-                        <input class="form-check-input" id="customCheck1" type="checkbox">
-                        <label class="form-check-label" for="customCheck1">
-                      Фанера ФК 8х1525х1525 мм, сорт 4/4
-                    </label>
-                      </div>
-                    </div>
-                                 
-                      <div class="col-md-4 pl-0">                                  
-                        <div class="form-group d-flex align-items-center mb-0 justify-content-end">
-                                         <select class="form-control col-3 ml-2">
-                      <option selected>Чистовые</option>
-                      <option>Черновые</option>
-                    </select>
-                          <input type="text" class="form-control ml-2 col-2" placeholder="Цена">
-                          <select class="form-control col-3 ml-2">
-                      <option selected disabled>Ед.изм.</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
-
-                          <input type="text" class="form-control col-2 ml-2" placeholder="Расход">
-                          <input type="text" class="form-control col-3 ml-2" placeholder="Стоимость">
-             
-                        </div>
-                      </div>
-                    </div>
-     <div class="add-work py-3">
-                +Добавить материал
+                <form class="col-12">
+                  <div class="input-group">
+                    <input class="form-control py-2" placeholder="Введите навание материала ">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </form>
               </div>
-                  <div class="row justify-content-between align-items-center col-12 py-2">
-                    <div class="col-8">
-                      <div class="form-check ">
-                        <input class="form-check-input" id="customCheck2" type="checkbox">
-                        <label class="form-check-label" for="customCheck2">
-                      Фанера ФК 8х1525х1525 мм, сорт 4/4
-                    </label>
-                      </div>
+
+              <div class="row col-12 px-0 py-3">
+
+                <div class="row justify-content-between align-items-center col-12 py-2 pb-3 bb">
+                  <div class="col-8">
+                    <div class="form-check ">
+                      <input class="form-check-input" id="customCheck1" type="checkbox">
+                      <label class="form-check-label" for="customCheck1">
+                        Фанера ФК 8х1525х1525 мм, сорт 4/4
+                      </label>
                     </div>
-                      <div class="col-md-4 pl-0">
-                        <div class="total-sum col-3 ml-auto px-0 text-right">1204,00</div>      
-                      </div>
+                  </div>
+
+                  <div class="col-md-4 pl-0">
+                    <div class="form-group d-flex align-items-center mb-0 justify-content-end">
+                      <select class="form-control col-3 ml-2">
+                        <option selected>Чистовые</option>
+                        <option>Черновые</option>
+                      </select>
+                      <input type="text" class="form-control ml-2 col-2" placeholder="Цена">
+                      <select class="form-control col-3 ml-2">
+                        <option selected disabled>Ед.изм.</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+
+                      <input type="text" class="form-control col-2 ml-2" placeholder="Расход">
+                      <input type="text" class="form-control col-3 ml-2" placeholder="Стоимость">
+
                     </div>
+                  </div>
+                </div>
+                <div class="add-work py-3">
+                  +Добавить работу
+                </div>
+                <div class="row justify-content-between align-items-center col-12 py-2">
+                  <div class="col-8">
+                    <div class="form-check ">
+                      <input class="form-check-input" id="customCheck2" type="checkbox">
+                      <label class="form-check-label" for="customCheck2">
+                        Фанера ФК 8х1525х1525 мм, сорт 4/4
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-0">
+                    <div class="total-sum col-3 ml-auto px-0 text-right">1204,00</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
     </div>
-
   </div>
-</div>
 
 </template>
 
