@@ -60,11 +60,13 @@ export default new Router({
             name: 'XtraMaterialsforAddition',
             component: XtraMaterialsforAddition
         },
+
         {
             path: '/CreateXtraWork',
             name: 'CreateXtraWork',
             component: CreateXtraWork
         },
+
         {
             path: '/ActOfWork',
             name: 'ActOfWork',
