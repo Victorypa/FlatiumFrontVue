@@ -9,56 +9,67 @@ import Timetable from './views/Timetable.vue'
 import CreateAllWorks from './views/CreateAllWorks.vue'
 import AdditionMaterials from './views/AdditionMaterials.vue'
 import XtraMaterialsforAddition from './views/XtraMaterialsforAddition.vue'
+import CreateXtraWork from './views/CreateXtraWork.vue'
+import ActOfWork from './views/ActOfWork.vue'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/create',
-      name: 'create',
-      component: Create
-    },
-    {
-      path: '/estimates',
-      name: 'estimates',
-      component: Estimates
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: Login
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: Projects
-    },
-    {
-      path: '/timetableStartDate',
-      name: 'timetableStartDate',
-      component: TimetableStartDate
-    },
-    {
-      path: '/timetable',
-      name: 'timetable',
-      component: Timetable
-    },
-    {
-      path: '/createallworks',
-      name: 'createallworks',
-      component: CreateAllWorks
-    },
-    {
-      path: '/additionMaterials',
-      name: 'additionMaterials',
-      component: AdditionMaterials
-    },
-    {
-      path: '/XtraMaterialsforAddition',
-      name: 'XtraMaterialsforAddition',
-      component: XtraMaterialsforAddition
-    },
-    
-  ]
+    routes: [{
+            path: '/create',
+            name: 'create',
+            component: Create
+        },
+        {
+            path: '/estimates',
+            name: 'estimates',
+            component: Estimates
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
+        },
+        {
+            path: '/projects',
+            name: 'projects',
+            component: Projects
+        },
+        {
+            path: '/timetableStartDate',
+            name: 'timetableStartDate',
+            component: TimetableStartDate
+        },
+        {
+            path: '/timetable',
+            name: 'timetable',
+            component: Timetable
+        },
+        {
+            path: '/createallworks',
+            name: 'createallworks',
+            component: CreateAllWorks
+        },
+        {
+            path: '/additionMaterials',
+            name: 'additionMaterials',
+            component: AdditionMaterials
+        },
+        {
+            path: '/XtraMaterialsforAddition',
+            name: 'XtraMaterialsforAddition',
+            component: XtraMaterialsforAddition
+        },
+        {
+            path: '/CreateXtraWork',
+            name: 'CreateXtraWork',
+            component: CreateXtraWork
+        },
+        {
+            path: '/ActOfWork',
+            name: 'ActOfWork',
+            component: ActOfWork
+        },
+
+    ]
 })
