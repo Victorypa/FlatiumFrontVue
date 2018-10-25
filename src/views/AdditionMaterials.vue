@@ -32,6 +32,12 @@
                 </select>
               </div>
             </div>
+            
+            <div class="row px-3">
+              <div class="col-md-12  pt-3">
+                <input type="text" placeholder="Название" class="form-control">
+              </div>
+            </div>   
 
             <div class="row px-3 pt-3 pb-1">
               <div class="col-md-8">

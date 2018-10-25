@@ -739,4 +739,5 @@ export default {
   font-size: 0.75rem;
   color: #ccc;
 }
+
 </style>

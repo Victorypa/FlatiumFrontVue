@@ -13,8 +13,9 @@
 
           <div class="row col-10 fixed-part shadow bg-white rounded pl-3 align-items-center">
             <div class="col-md-8 pl-1">
-              <h1 class="main-caption">
+              <h1 class="main-caption w-100">
                 Акт выполненных работ №1
+                
               </h1>
             </div>
 
@@ -78,7 +79,7 @@
                           <td>100 Р/М<sup>2</sup></td>
                           <td>2800 Р</td>
                         </tr>
-                                      <tr class="small-case">
+                                      <!-- <tr class="small-case">
                           <th scope="row" class="w-50">Наименование 1</th>
                           <td></td>
                           <td>100 Р/М<sup>2</sup></td>
@@ -95,7 +96,7 @@
                           <td></td>
                           <td>100 Р/М<sup>2</sup></td>
                           <td>2800 Р</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <tr>
                           <th scope="row" class="w-50 pl-1">
@@ -392,5 +393,7 @@ export default {
 tr:hover {
   cursor: pointer;
 }
+
+
 </style>
 

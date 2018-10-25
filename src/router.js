@@ -11,6 +11,10 @@ import AdditionMaterials from './views/AdditionMaterials.vue'
 import XtraMaterialsforAddition from './views/XtraMaterialsforAddition.vue'
 import CreateXtraWork from './views/CreateXtraWork.vue'
 import ActOfWork from './views/ActOfWork.vue'
+import ExportAct from './views/ExportAct.vue'
+import ExtraWork from './views/ExtraWork.vue'
+import ExportExtraWork from './views/ExportExtraWork.vue'
+import Balance from './views/Balance.vue'
 
 Vue.use(Router)
 
@@ -73,5 +77,27 @@ export default new Router({
             component: ActOfWork
         },
 
+        {
+            path: '/ExportAct',
+            name: 'ExportAct',
+            component: ExportAct
+        },
+        {
+            path: '/ExtraWork',
+            name: 'ExtraWork',
+            component: ExtraWork
+        },
+
+        {
+            path: '/ExportExtraWork',
+            name: 'ExportExtraWork',
+            component: ExportExtraWork
+        },
+
+        {
+            path: '/Balance',
+            name: 'Balance',
+            component: Balance
+        },
     ]
 })
