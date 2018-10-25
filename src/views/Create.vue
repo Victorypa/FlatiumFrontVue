@@ -11,7 +11,7 @@
         <div class="col-md-10 px-0">
           <div class="row col-10 fixed-part shadow bg-white rounded align-items-center">
             <div class="pb-4 d-flex justify-content-between align-items-center w-100">
-              <div class="col-md-6 px-0">
+              <div class="col-md-6">
                 <h1 class="main-caption ml-0">
                   Создание сметы
                 </h1>
@@ -67,6 +67,7 @@
             </div>
 
           </div>
+          
           <div class="carousel-wrapper">
             <div class="row align-items-center col-12">
 
@@ -106,7 +107,8 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4">
+
+          <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4 mb-3">
             <div class="col-6">
               <select class="form-control">
                 <option selected disabled>Тип помещения или вид работы</option>
@@ -118,170 +120,109 @@
             </div>
             <div class="col-6 d-flex align-items-center justify-content-between">
 
-              <div class="placeholder-text ml-2" placeholder="Выс">
-                <input />
-              </div>
-                <div class="placeholder-text ml-2" placeholder="P">
-                  <input />
-              </div>
-                  <div class="placeholder-text ml-2" placeholder="S">
+                <div class="placeholder-text ml-2" placeholder="Выс">
                     <input />
-              </div>
-                    <div class="placeholder-text ml-2" placeholder="S">
-                      <input />
-              </div>
-                      <div class="placeholder-text ml-2" placeholder="S">
-                        <input />
-              </div>
-                        <div class="placeholder-text ml-2" placeholder="S стен">
-                          <input disabled />
-              </div>
-                        </div>
+                </div>
+                <div class="placeholder-text ml-2" placeholder="P">
+                    <input />
+                </div>
+                <div class="placeholder-text ml-2" placeholder="S">
+                    <input />
+                </div>
+                <div class="placeholder-text ml-2" placeholder="S">
+                    <input />
+                </div>
+                <div class="placeholder-text ml-2" placeholder="S">
+                    <input />
+                </div>
+                <div class="placeholder-text ml-2" placeholder="S стен">
+                    <input disabled />
+                </div>
+            </div>
+          </div>
 
+          <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4 fixed-search">
+              <div class="col-2">
+                  <select class="form-control">
+                    <option selected disabled>Пол</option>
+                    <option>Стены</option>
+                    <option>Потолок</option>
+                  </select>
+              </div>
+              <div class="col-10">
+                  <form>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Название (адрес) объекта">
                       </div>
+                  </form>
+              </div>
 
-                      <div class="row align-items-center justify-content-between px-15">
+          </div>
 
-                        <div class="col-6 pt-5">
-                          <div class="create__sum">
-                            ИТОГО В ТЕКУЩЕЙ ВКЛАДКЕ: 1600 Р
-                          </div>
-                        </div>
-                      </div>
+          <div class="row align-items-center justify-content-between px-15">
 
-                      <div class="row px-15">
-                        <div class="col-12">
-                          <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
-                            Проемы
-                          </div>
-                        </div>
-                        <div class="col-12 px-0 add-space-wrapper">
-                          <div class="row col-12 justify-content-between add-space-block align-items-center pr-0 mb-2">
+            <div class="col-6 pt-5">
+              <div class="create__sum">
+                ИТОГО В ТЕКУЩЕЙ ВКЛАДКЕ: 1600 Р
+              </div>
+            </div>
+          </div>
 
-                            <div class="col-5 px-0">
-                              <button class="add-space-button active">Добавить проем</button>
+          <div class="row px-15">
+            <div class="col-12">
+              <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
+                Проемы
+              </div>
+            </div>
+            <div class="col-12 px-0 add-space-wrapper">
+              <div class="row col-12 justify-content-between add-space-block align-items-center pr-0 mb-2">
+
+                <div class="col-5 px-0">
+                  <button class="add-space-button active">Добавить проем</button>
+                </div>
+
+                <div class="col-md-7 pl-4">
+                  <div class="form-group d-flex align-items-center create-spaces">
+                    <div class="col-3 pl-0">
+                      <select class="form-control">
+                        <option selected="" disabled="">Наименование</option>
+                        <option>name</option>
+                        <option>name</option>
+                        <option>name</option>
+                        <option>name</option>
+                      </select>
                             </div>
-
-                            <div class="col-md-7 pl-4">
-                              <div class="form-group d-flex align-items-center create-spaces">
-                                <div class="col-3 pl-0">
-                                  <select class="form-control">
-                            <option selected="" disabled="">Наименование</option>
-                            <option>name</option>
-                            <option>name</option>
-                            <option>name</option>
-                            <option>name</option>
-                          </select>
-                                </div>
-                                <input type="text" class="form-control col-md-2" placeholder="Ширина">
-                                <input type="text" class="form-control col-md-2" placeholder="Высота">
-                                <span class="pl-2">x</span>
-                                <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                                <div class="form-group__calc col-auto">-5 М<sup>2</sup></div>
-                                <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить материал">
-                        <img src="../assets/img/del.svg" alt="add-button">
-                      </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row col-12">
-                          <button class="add-space-button add-space-button_proem">+ Добавить проем </button>
-                        </div>
-
-                        <div class="col-12">
-                          <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
-                            Пол
-                          </div>
-                        </div>
-                        <div class="col-md-12 px-0 all-items">
-
-                          <div class="row align-items-center">
-                            <label class="col-md-6 mb-0">
-                  <div class="form-check custom-control">
-                    <input class="form-check-input" id="customCheck1" type="checkbox" checked>
-                    <label class="form-check-label" for="customCheck1">
-                      Грунтовка пола
-                    </label>
-                          </div>
-                          </label>
-
-                          <div class="col-md-6">
-                            <div class="form-group form-group--margin d-flex align-items-center">
-                              <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                              <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                              <input type="text" class="form-control col-md-2" placeholder="800">
-                              <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
-                              <div class="form-group__calc col-md-auto">800
-                                Р/М<sup>2</sup></div>
-                              <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                      <img src="../assets/img/del.svg" alt="add-button">
-                      <div class="remove-materials ml-1">
-                        Удалить
-                      </div>
-                    </button>
-                              <button class="add-button ml-auto" title="Добавить материалы">
-                      <img src="../assets/img/add-materials.svg" alt="add-button">
-                    </button>
-                            </div>
-                          </div>
-
-                          <div class="row col-12">
-                            <div class="col-6 pl-5 mb-3">
-                              <div class="subtitle-list">
-                                <div class="subtitle-list__item">Наименование работы 1</div>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="d-flex align-items-center col-12">
-                                <div class="col-4 ml-57"></div>
-                                <div class="form-group__calc col-md-auto">800
-                                  Р/М<sup>2</sup></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-
-                          <label class="col-md-6">
-                  <div class="form-check custom-control">
-                    <input class="form-check-input" id="customCheck2" type="checkbox">
-                    <label class="form-check-label" for="customCheck2">
-                      Наименование работы
-                    </label>
-                        </div>
-                        </label>
-
-                        <div class="col-md-6">
-                          <div class="form-group form-group--margin d-flex align-items-center">
+                            <input type="text" class="form-control col-md-2" placeholder="Ширина">
+                            <input type="text" class="form-control col-md-2" placeholder="Высота">
+                            <span class="pl-2">x</span>
                             <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                            <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                            <input type="text" class="form-control col-md-2" placeholder="800">
-                            <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
-                            <div class="form-group__calc col-md-auto">800
-                              Р/М<sup>2</sup></div>
-                            <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                          <img src="../assets/img/del.svg" alt="add-button">
-                          <div class="remove-materials ml-1">
-                            Удалить
-                          </div>
-                        </button>
-                            <button class="add-button ml-auto" title="Добавить материалы">
-                          <img src="../assets/img/add-materials.svg" alt="add-button">
-                        </button>
+                            <div class="form-group__calc col-auto">-5 М<sup>2</sup></div>
+                            <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить материал">
+                    <img src="../assets/img/del.svg" alt="add-button">
+                  </button>
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <div class="row">
-                        <label class="col-md-6">
-                  <div class="form-check custom-control">
-                    <input class="form-check-input" id="customCheck3" type="checkbox">
-                    <label class="form-check-label" for="customCheck3">
-                      Наименование работы
-                    </label>
+                    <div class="row col-12">
+                      <button class="add-space-button add-space-button_proem">+ Добавить проем </button>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
+                        Пол
+                      </div>
+                    </div>
+                    <div class="col-md-12 px-0 all-items">
+
+                      <div class="row align-items-center">
+                        <label class="col-md-6 mb-0">
+              <div class="form-check custom-control">
+                <input class="form-check-input" id="customCheck1" type="checkbox" checked>
+                <label class="form-check-label" for="customCheck1">
+                  Грунтовка пола
+                </label>
                       </div>
                       </label>
 
@@ -294,39 +235,41 @@
                           <div class="form-group__calc col-md-auto">800
                             Р/М<sup>2</sup></div>
                           <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                          <img src="../assets/img/del.svg" alt="add-button">
-                          <div class="remove-materials ml-1">
-                            Удалить
-                          </div>
-                        </button>
+                  <img src="../assets/img/del.svg" alt="add-button">
+                  <div class="remove-materials ml-1">
+                    Удалить
+                  </div>
+                </button>
                           <button class="add-button ml-auto" title="Добавить материалы">
-                          <img src="../assets/img/add-materials.svg" alt="add-button">
-                        </button>
+                  <img src="../assets/img/add-materials.svg" alt="add-button">
+                </button>
+                        </div>
+                      </div>
+
+                      <div class="row col-12">
+                        <div class="col-6 pl-5 mb-3">
+                          <div class="subtitle-list">
+                            <div class="subtitle-list__item">Наименование работы 1</div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex align-items-center col-12">
+                            <div class="col-4 ml-57"></div>
+                            <div class="form-group__calc col-md-auto">800
+                              Р/М<sup>2</sup></div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row col-12">
-                  <button class="add-space-button add-space-button-work">+ Добавить работу</button>
-                </div>
-                <div class="row px-15">
 
-                  <div class="col-12">
-                    <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
-                      Стены
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 px-0">
                     <div class="row">
 
                       <label class="col-md-6">
-                      <div class="form-check custom-control">
-                        <input class="form-check-input" id="customCheck2" type="checkbox">
-                        <label class="form-check-label" for="customCheck2">
-                          Наименование работы
-                        </label>
+              <div class="form-check custom-control">
+                <input class="form-check-input" id="customCheck2" type="checkbox">
+                <label class="form-check-label" for="customCheck2">
+                  Наименование работы
+                </label>
                     </div>
                     </label>
 
@@ -339,26 +282,25 @@
                         <div class="form-group__calc col-md-auto">800
                           Р/М<sup>2</sup></div>
                         <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                          <img src="../assets/img/del.svg" alt="add-button">
-                          <div class="remove-materials ml-1">
-                            Удалить
-                          </div>
-                        </button>
+                      <img src="../assets/img/del.svg" alt="add-button">
+                      <div class="remove-materials ml-1">
+                        Удалить
+                      </div>
+                    </button>
                         <button class="add-button ml-auto" title="Добавить материалы">
-                          <img src="../assets/img/add-materials.svg" alt="add-button">
-                        </button>
+                      <img src="../assets/img/add-materials.svg" alt="add-button">
+                    </button>
                       </div>
                     </div>
                   </div>
 
                   <div class="row">
-
                     <label class="col-md-6">
-                      <div class="form-check custom-control">
-                        <input class="form-check-input" id="customCheck2" type="checkbox">
-                        <label class="form-check-label" for="customCheck2">
-                          Наименование работы
-                        </label>
+              <div class="form-check custom-control">
+                <input class="form-check-input" id="customCheck3" type="checkbox">
+                <label class="form-check-label" for="customCheck3">
+                  Наименование работы
+                </label>
                   </div>
                   </label>
 
@@ -371,14 +313,91 @@
                       <div class="form-group__calc col-md-auto">800
                         Р/М<sup>2</sup></div>
                       <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                          <img src="../assets/img/del.svg" alt="add-button">
-                          <div class="remove-materials ml-1">
-                            Удалить
-                          </div>
-                        </button>
+                      <img src="../assets/img/del.svg" alt="add-button">
+                      <div class="remove-materials ml-1">
+                        Удалить
+                      </div>
+                    </button>
                       <button class="add-button ml-auto" title="Добавить материалы">
-                          <img src="../assets/img/add-materials.svg" alt="add-button">
-                        </button>
+                      <img src="../assets/img/add-materials.svg" alt="add-button">
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="row col-12">
+                <button class="add-space-button add-space-button-work">+ Добавить работу</button>
+              </div>
+              <div class="row px-15">
+
+                <div class="col-12">
+                  <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
+                    Стены
+                  </div>
+                </div>
+
+                <div class="col-md-12 px-0">
+                  <div class="row">
+
+                    <label class="col-md-6">
+                    <div class="form-check custom-control">
+                      <input class="form-check-input" id="customCheck2" type="checkbox">
+                      <label class="form-check-label" for="customCheck2">
+                        Наименование работы
+                      </label>
+                  </div>
+                  </label>
+
+                  <div class="col-md-6">
+                    <div class="form-group form-group--margin d-flex align-items-center">
+                      <input type="text" class="form-control col-md-2" placeholder="Кол-во">
+                      <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                      <input type="text" class="form-control col-md-2" placeholder="800">
+                      <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
+                      <div class="form-group__calc col-md-auto">800
+                        Р/М<sup>2</sup></div>
+                      <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
+                        <img src="../assets/img/del.svg" alt="add-button">
+                        <div class="remove-materials ml-1">
+                          Удалить
+                        </div>
+                      </button>
+                      <button class="add-button ml-auto" title="Добавить материалы">
+                        <img src="../assets/img/add-materials.svg" alt="add-button">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <label class="col-md-6">
+                    <div class="form-check custom-control">
+                      <input class="form-check-input" id="customCheck2" type="checkbox">
+                      <label class="form-check-label" for="customCheck2">
+                        Наименование работы
+                      </label>
+                </div>
+                </label>
+
+                <div class="col-md-6">
+                  <div class="form-group form-group--margin d-flex align-items-center">
+                    <input type="text" class="form-control col-md-2" placeholder="Кол-во">
+                    <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                    <input type="text" class="form-control col-md-2" placeholder="800">
+                    <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
+                    <div class="form-group__calc col-md-auto">800
+                      Р/М<sup>2</sup></div>
+                    <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
+                        <img src="../assets/img/del.svg" alt="add-button">
+                        <div class="remove-materials ml-1">
+                          Удалить
+                        </div>
+                      </button>
+                    <button class="add-button ml-auto" title="Добавить материалы">
+                        <img src="../assets/img/add-materials.svg" alt="add-button">
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -738,6 +757,15 @@ export default {
 .inputs-caption {
   font-size: 0.75rem;
   color: #ccc;
+}
+
+.fixed-search {
+  &-active {
+    position: fixed;
+    z-index: 1000;
+    top: 145px;
+  }
+
 }
 
 </style>

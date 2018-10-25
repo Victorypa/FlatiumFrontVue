@@ -60,9 +60,8 @@
                       </label>
                     </div>
                   </th>
-                  <th>Номер договора</th>
                   <th>Статус</th>
-                  <th>
+                   <th class="d-flex justify-content-end">
                     <span class="arrow-sort">
                       Сортировка по дате
                       <img class="arrow-icon" src="../assets/img/arrow_down.svg" alt="export">
@@ -80,9 +79,61 @@
                       </label>
                     </div>
                   </td>
-                  <td>Doe</td>
+  
                   <td>john@example.com</td>
-                  <td>john@example.com</td>
+                  <td class="d-flex col-6 ml-auto">
+                    <div class="col-10 pl-5">
+                      john@example.com
+                    </div>
+                    
+                      <div class="col-2">
+                    <a class="estimates__dropdown-img estimates__dropdown-img--rotate" href="." data-toggle="dropdown" data-html="true"
+                      title="Действия">
+                      <img src="../assets/img/dropdown-toggle.svg" alt="export">
+                    </a>
+
+
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Создать акт</a>
+                    <a class="dropdown-item" href="#">Создать доп.ведомость</a>
+                    <a class="dropdown-item" href="#">Баланс</a>
+                  </div>
+                </div>
+                  </td>
+                     <tr class="small-case">
+                          <td scope="row" class="w-50">Наименование 1</td>
+                 
+                          <td></td>
+                         <td class="">
+                           <div class="col-5 ml-auto">
+                             15.10.2018
+                           </div>
+                           </td>
+                        </tr>
+                            <tr class="small-case">
+                            <td scope="row" class="w-50">Наименование 1</td>
+                        
+                          <td class="d-flex pl-2">
+                              <button class="add-button add-button--create d-flex align-items-center" title="Удалить материал">
+                                <img src="../assets/img/del.svg" alt="add-button">
+                                  <div class="remove-materials ml-1">
+                                  Редактировать
+                                  </div>
+                                </button>
+                                <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
+                                <img src="../assets/img/del.svg" alt="add-button">
+                                  <div class="remove-materials ml-1">
+                                  Удалить
+                                  </div>
+                              </button>
+                          </td>
+                           <td>
+                           <div class="col-5 ml-auto">
+                             15.10.2018
+                           </div>
+                           </td>
+                        </tr> 
+                    
                 </tr>
                 <tr>
                   <td>
@@ -93,10 +144,11 @@
                       </label>
                     </div>
                   </td>
-                  <td>Doe</td>
                   <td>john@example.com</td>
                   <td>john@example.com</td>
+                  
                 </tr>
+                
                 <tr>
                   <td>
                     <div class="form-check custom-control checkbox">
@@ -106,10 +158,28 @@
                       </label>
                     </div>
                   </td>
-                  <td>Doe</td>
                   <td>john@example.com</td>
                   <td>john@example.com</td>
                 </tr>
+
+                                                       <tr class="small-case">
+                          <td scope="row" class="w-50">Наименование 1</td>
+                 
+                          <td>100 Р/М<sup>2</sup></td>
+                          <td>2800 Р</td>
+                        </tr>
+                                     <tr class="small-case">
+                            <td scope="row" class="w-50">Наименование 1</td>
+                        
+                          <td>100 Р/М<sup>2</sup></td>
+                          <td>2800 Р</td>
+                        </tr>
+                                      <tr class="small-case">
+                            <td scope="row" class="w-50">Наименование 1</td>
+                        
+                          <td>100 Р/М<sup>2</sup></td>
+                          <td>2800 Р</td>
+                        </tr>
 
               </tbody>
             </table>
@@ -128,11 +198,11 @@
 </template>
 
 <script>
-import basicheader from  './partials/BasicHeader'
-import sidebar from  './partials/Sidebar'
+import basicheader from "./partials/BasicHeader";
+import sidebar from "./partials/Sidebar";
 export default {
   components: {
-    basicheader, 
+    basicheader,
     sidebar
   }
 };
@@ -174,20 +244,32 @@ export default {
   }
   th {
     border-top: none;
-
   }
 }
+
+
 
 .estimates {
   &__dropdown-img {
     display: block;
     width: 30px;
     height: 32px;
+
     img {
       @include img100;
       transform: rotate(90deg);
     }
+    &--rotate img {
+      transform: none;
+           opacity: 0;
+    }
   }
+
+    tr:hover {
+    .estimates__dropdown-img--rotate img {
+        opacity: 1;
+    }
+    }
 
   .table {
     margin-top: 300px;
@@ -218,7 +300,6 @@ export default {
   }
 }
 
-
 .arrow-icon {
   display: inline-block;
   width: 15px;
@@ -235,61 +316,92 @@ export default {
   }
 }
 
-
 .form-check {
-    &-label {
-      @include transition;
-      cursor: pointer;
-      &:before {
-        border: 1px solid $ccc;
-        border-radius: 0;
-      }
-      &::after {
-        position: absolute;
-        left: -18px;
-        top: 2px;
-        padding-left: 3px;
-        font-size: 11px;
-        color: $main-color;
-      }
-      &:hover {
-        color: $button-hover;
-      }
+  &-label {
+    @include transition;
+    cursor: pointer;
+    &:before {
+      border: 1px solid $ccc;
+      border-radius: 0;
     }
-  
-    input[type="checkbox"]:checked + label::after,
-    .abc-checkbox input[type="radio"]:checked + label::after {
-      font-family: "FontAwesome";
-      content: "\f00c";
+    &::after {
+      position: absolute;
+      left: -18px;
+      top: 2px;
+      padding-left: 3px;
+      font-size: 11px;
+      color: $main-color;
     }
-  
-    label {
-      cursor: pointer;
-      display: inline;
-      vertical-align: top;
-      position: relative;
-      padding-left: 5px;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 0px;
-        left: 0px;
-  
-        margin-left: -1.25rem;
-        border-radius: 0;
-        background-color: #fff;
-        transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-      }
-      a {
-        &:hover {
-          color: $main-color;
-        }
-      }
-
+    &:hover {
+      color: $button-hover;
     }
   }
+
+  input[type="checkbox"]:checked + label::after,
+  .abc-checkbox input[type="radio"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+  }
+
+  label {
+    cursor: pointer;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+    padding-left: 5px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0px;
+      left: 0px;
+
+      margin-left: -1.25rem;
+      border-radius: 0;
+      background-color: #fff;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    }
+    a {
+      &:hover {
+        color: $main-color;
+      }
+    }
+    
+  }
+  
+}
+
+.small-case {
+  font-size: 0.8rem;
+  td {
+    &:first-child {
+      padding-left: 40px;
+    }
+  }
+}
+  .add-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+        &:focus {
+      outline: none;
+    }
+    }
+
+  .add-button--remove, 
+  .add-button--create{
+      color: #ccc;
+
+      &:hover {
+        cursor: pointer;
+        color: $main-color;
+      }
+
+      img {
+        width: 10px;
+      }
+    }
 
 </style>
 
