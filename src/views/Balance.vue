@@ -37,7 +37,7 @@
                   <div class="main-subtitle profit col-1">
                     Приход:
                   </div>
-                  <div class="col-2">
+                  <div class="col-1">
                     <input type="text" class="form-control" placeholder="Сумма">
                   </div>
                   <div class="col-2">
@@ -48,7 +48,7 @@
                                 <option>1</option>
                               </select>
                   </div>
-                  <div class="col-2">
+                  <div class="col-1">
                     <input type="text" class="form-control" placeholder="Дата">
                   </div>
   
@@ -58,7 +58,7 @@
                   <div class="main-subtitle profit col-1">
                     Расход:
                   </div>
-                  <div class="col-2">
+                  <div class="col-1">
                     <input type="text" class="form-control" placeholder="Сумма">
                   </div>
                   <div class="col-2">
@@ -69,7 +69,7 @@
                                 <option>1</option>
                               </select>
                   </div>
-                  <div class="col-2">
+                  <div class="col-1">
                     <input type="text" class="form-control" placeholder="Дата">
                   </div>
   
