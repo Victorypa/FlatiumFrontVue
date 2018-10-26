@@ -32,8 +32,8 @@
   
               <div class="projects__content px-15">
                 <div class="form-group d-flex align-items-center col-6">
-                  <input type="text" class="form-control col-3" placeholder="Начало отчетного периода">
-                  <input type="text" class="form-control col-3" placeholder="Конец отчего периода">
+                  <datepicker class="my-datepicker" :language="ru"></datepicker>
+                  <datepicker class="my-datepicker pl-3" :language="ru"></datepicker>
                   <div class="col-md-3">
                     <button type="button" class="primary-button w-100">Экспорт</button>
                   </div>
@@ -422,60 +422,66 @@
 
 
 <script>
-  import basicheader from "./partials/BasicHeader";
-  import sidebar from "./partials/Sidebar";
-  export default {
-    components: {
-      basicheader,
-      sidebar
-    }
-  };
+import basicheader from "./partials/BasicHeader";
+import sidebar from "./partials/Sidebar";
+import Datepicker from "vuejs-datepicker";
+import { ru } from "vuejs-datepicker/dist/locale";
+export default {
+  components: {
+    basicheader,
+    sidebar,
+    Datepicker
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/scss/vars.scss";
-  .fixed-part {
-    position: fixed;
-    background-color: $white;
-    padding-bottom: 35px;
-    padding-top: 85px;
-    z-index: 999;
-  }
-  
-  .projects {
-    &__content {
-      padding-top: 250px;
-      padding-bottom: 20px;
-      .form-group {
-        margin-bottom: 0;
-        input {
-          &:first-child {
-            margin-left: 0;
-          }
-          margin-left: 10px;
-        }
-      }
-      .form-control {
-        color: 666;
-        height: 45px;
-      }
-    }
-    &__desc {
-      font-weight: bold;
-      color: $text-color;
-    }
-    &__information {
-      .table {
-        color: $text-color;
-        td {
-          width: 13%;
-        }
-        th {
-          font-weight: normal;
-        }
-      }
-    }
-  }
+@import "../assets/scss/vars.scss";
+.fixed-part {
+  position: fixed;
+  background-color: $white;
+  padding-bottom: 35px;
+  padding-top: 85px;
+  z-index: 999;
+}
 
+.projects {
+  &__content {
+    padding-top: 250px;
+    padding-bottom: 20px;
+    .form-group {
+      margin-bottom: 0;
+      input {
+        &:first-child {
+          margin-left: 0;
+        }
+        margin-left: 10px;
+      }
+    }
+    .form-control {
+      color: 666;
+      height: 45px;
+    }
+  }
+  &__desc {
+    font-weight: bold;
+    color: $text-color;
+  }
+  &__information {
+    .table {
+      color: $text-color;
+      td {
+        width: 13%;
+      }
+      th {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.my-datepicker {
+  line-height: 21px;
+}
 </style>
 
