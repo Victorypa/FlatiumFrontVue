@@ -23,9 +23,9 @@
               </div>
   
               <div class="col-md-6 pt-3 d-flex justify-content-between">
-                <div class="main-subtitle px-15"> Итого: 2 120 000 Р</div>
-                <div class="main-subtitle px-15"> Баланс: 1 120 000 Р</div>
-                <div class="main-subtitle px-15"> Маржа: 120 000 Р</div>
+                <div class="main-subtitle px-15 col-auto pl-0"> Итого: 2 120 000 Р</div>
+                <div class="main-subtitle px-15 col-auto"> Баланс: 1 120 000 Р</div>
+                <div class="main-subtitle px-15 col-auto"> Маржа: 120 000 Р</div>
               </div>
   
             </div>
@@ -34,10 +34,10 @@
   
               <div class="main-content">
                 <div class="row">
-                  <div class="main-subtitle profit col-1">
+                  <div class="main-subtitle profit col-1 mr-4">
                     Приход:
                   </div>
-                  <div class="col-1">
+                  <div class="col-2">
                     <input type="text" class="form-control" placeholder="Сумма">
                   </div>
                   <div class="col-2">
@@ -48,17 +48,17 @@
                                 <option>1</option>
                               </select>
                   </div>
-                  <div class="col-1">
+                  <div class="col-2">
                     <input type="text" class="form-control" placeholder="Дата">
                   </div>
   
                 </div>
   
                 <div class="row py-4">
-                  <div class="main-subtitle profit col-1">
+                  <div class="main-subtitle profit col-1 mr-4">
                     Расход:
                   </div>
-                  <div class="col-1">
+                  <div class="col-2">
                     <input type="text" class="form-control" placeholder="Сумма">
                   </div>
                   <div class="col-2">
@@ -69,7 +69,7 @@
                                 <option>1</option>
                               </select>
                   </div>
-                  <div class="col-1">
+                  <div class="col-2">
                     <input type="text" class="form-control" placeholder="Дата">
                   </div>
   
@@ -107,7 +107,7 @@
                   </tr>
                   <tr>
                    <td class="pl-4">+1 200 000</td>
-                    <td>Оплата материалов></td>
+                    <td>Оплата материалов</td>
                     <td>10 октября 2018</td>
                     <td> <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
                         <img src="../assets/img/del.svg" alt="add-button">
