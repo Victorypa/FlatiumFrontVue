@@ -240,8 +240,6 @@
 
               </div>
 
-            </div>
-
             <div class="col-12 px-0">
 
             <div class="px-15">
@@ -431,6 +429,10 @@
 
             </div>
 
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -484,10 +486,6 @@ export default {
       color: 666;
       height: 45px;
     }
-
-    .custom-control {
-      padding-left: 1.25rem;
-    }
   }
 
   &__desc {
@@ -506,69 +504,6 @@ export default {
       th {
         font-weight: normal;
       }
-    }
-  }
-}
-
-.form-check {
-  &-label {
-    padding-top: 1px;
-    @include transition;
-    cursor: pointer;
-
-    &:before {
-      border: 1px solid $ccc;
-      border-radius: 0;
-    }
-
-    &::after {
-      position: absolute;
-      left: -18px;
-      top: 5px;
-      padding-left: 3px;
-      font-size: 11px;
-      color: $main-color;
-    }
-
-    &:hover {
-      color: $button-hover;
-    }
-  }
-
-  input[type="checkbox"]:checked + label::after,
-  .abc-checkbox input[type="radio"]:checked + label::after {
-    font-family: "FontAwesome";
-    content: "\f00c";
-  }
-
-  label {
-    cursor: pointer;
-    display: inline;
-    vertical-align: top;
-    position: relative;
-    padding-left: 5px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 3px;
-      left: 0px;
-
-      margin-left: -1.25rem;
-      border-radius: 0;
-      background-color: #fff;
-      transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-    }
-  }
-}
-
-.small-case {
-  font-size: 0.8rem;
-  th {
-    &:first-child {
-      padding-left: 60px;
     }
   }
 }

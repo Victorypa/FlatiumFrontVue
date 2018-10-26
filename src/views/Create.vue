@@ -221,6 +221,7 @@
               <div class="form-check custom-control">
                 <input class="form-check-input" id="customCheck1" type="checkbox" checked>
                 <label class="form-check-label" for="customCheck1">
+                  
                   Грунтовка пола
                 </label>
                       </div>
@@ -412,11 +413,11 @@
 </template>
 
 <script>
-import basicheader from  './partials/BasicHeader'
-import sidebar from  './partials/Sidebar'
+import basicheader from "./partials/BasicHeader";
+import sidebar from "./partials/Sidebar";
 export default {
   components: {
-    basicheader, 
+    basicheader,
     sidebar
   }
 };
@@ -436,7 +437,7 @@ export default {
 
 .create {
   .form-check {
-    &-input:checked~ {
+    &-input:checked ~ {
       label {
         font-weight: bold;
         color: #000;
@@ -512,7 +513,7 @@ export default {
     color: $text-color;
 
     .custom-control {
-      &-input:checked~.custom-control-label::before {
+      &-input:checked ~ .custom-control-label::before {
         background-color: $main-color;
       }
     }
@@ -544,7 +545,6 @@ export default {
   }
 
   .owl-carousel {
-
     .owl-next,
     .owl-prev {
       position: absolute;
@@ -698,8 +698,8 @@ export default {
     }
   }
 
-  input[type="checkbox"]:checked+label::after,
-  .abc-checkbox input[type="radio"]:checked+label::after {
+  input[type="checkbox"]:checked + label::after,
+  .abc-checkbox input[type="radio"]:checked + label::after {
     font-family: "FontAwesome";
     content: "\f00c";
   }
@@ -760,12 +760,10 @@ export default {
 }
 
 .fixed-search {
-  &-active {
+  &.active {
     position: fixed;
     z-index: 1000;
     top: 145px;
   }
-
 }
-
 </style>
