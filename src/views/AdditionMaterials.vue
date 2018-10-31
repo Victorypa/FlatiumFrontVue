@@ -22,7 +22,7 @@
             </div>
 
             <div class="row create-floor-work__content col-12">
-              <div class="col-12">
+              <div class="col-6">
                 <select class="form-control">
                   <option selected disabled>Пол</option>
                   <option>Стены</option>
@@ -31,14 +31,11 @@
                   <option>5</option>
                 </select>
               </div>
-            </div>
-            
-            <div class="row px-3">
-              <div class="col-md-12  pt-3">
+                <div class="col-md-6 ">
                 <input type="text" placeholder="Название" class="form-control">
               </div>
-            </div>   
-
+            </div>
+             
             <div class="row px-3 pt-3 pb-1">
               <div class="col-md-8">
                 <input type="text" placeholder="Название" class="form-control">
