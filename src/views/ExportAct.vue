@@ -28,16 +28,19 @@
   
             </div>
   
+            <div class="row projects__content">
+              <div class="form-group d-flex align-items-center col-6">
+                <datepicker class="my-datepicker" :language="ru"></datepicker>
+                <datepicker class="my-datepicker pl-3" :language="ru"></datepicker>
+                <div class="col-md-3">
+                  <button type="button" class="primary-button w-100">Экспорт</button>
+                </div>
+              </div>
+            </div>
+
             <div class="col-12 px-0">
   
-              <div class="projects__content px-15">
-                <div class="form-group d-flex align-items-center col-6">
-                  <datepicker class="my-datepicker" :language="ru"></datepicker>
-                  <datepicker class="my-datepicker pl-3" :language="ru"></datepicker>
-                  <div class="col-md-3">
-                    <button type="button" class="primary-button w-100">Экспорт</button>
-                  </div>
-                </div>
+              <div class=" px-15">
                 <h2 class="main-subtitle main-subtitle--room pl-3">
                   Комната 1
                 </h2>
