@@ -422,66 +422,74 @@
 
 
 <script>
-import basicheader from "./partials/BasicHeader";
-import sidebar from "./partials/Sidebar";
-import Datepicker from "vuejs-datepicker";
-import { ru } from "vuejs-datepicker/dist/locale";
-export default {
-  components: {
-    basicheader,
-    sidebar,
-    Datepicker
-  }
-};
+  import basicheader from "./partials/BasicHeader";
+  import sidebar from "./partials/Sidebar";
+  import Datepicker from "vuejs-datepicker";
+  import {
+    ru
+  } from "vuejs-datepicker/dist/locale";
+  export default {
+    data() {
+      return {
+        ru
+      }
+    },
+    components: {
+      basicheader,
+      sidebar,
+      Datepicker
+    },
+  
+  };
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/vars.scss";
-.fixed-part {
-  position: fixed;
-  background-color: $white;
-  padding-bottom: 35px;
-  padding-top: 85px;
-  z-index: 999;
-}
-
-.projects {
-  &__content {
-    padding-top: 250px;
-    padding-bottom: 20px;
-    .form-group {
-      margin-bottom: 0;
-      input {
-        &:first-child {
-          margin-left: 0;
+  @import "../assets/scss/vars.scss";
+  .fixed-part {
+    position: fixed;
+    background-color: $white;
+    padding-bottom: 35px;
+    padding-top: 85px;
+    z-index: 999;
+  }
+  
+  .projects {
+    &__content {
+      padding-top: 250px;
+      padding-bottom: 20px;
+      .form-group {
+        margin-bottom: 0;
+        input {
+          &:first-child {
+            margin-left: 0;
+          }
+          margin-left: 10px;
         }
-        margin-left: 10px;
+      }
+      .form-control {
+        color: 666;
+        height: 45px;
       }
     }
-    .form-control {
-      color: 666;
-      height: 45px;
-    }
-  }
-  &__desc {
-    font-weight: bold;
-    color: $text-color;
-  }
-  &__information {
-    .table {
+    &__desc {
+      font-weight: bold;
       color: $text-color;
-      td {
-        width: 13%;
-      }
-      th {
-        font-weight: normal;
+    }
+    &__information {
+      .table {
+        color: $text-color;
+        td {
+          width: 13%;
+        }
+        th {
+          font-weight: normal;
+        }
       }
     }
   }
-}
-
-.my-datepicker {
-  line-height: 21px;
-}
+  
+  .my-datepicker {
+    line-height: 21px;
+  }
 </style>
 
