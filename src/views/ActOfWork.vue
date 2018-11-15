@@ -15,7 +15,6 @@
               <div class="col-md-8">
                 <h1 class="main-caption w-100">
                   Акт выполненных работ №1
-  
                 </h1>
               </div>
 

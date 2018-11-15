@@ -22,10 +22,11 @@
                 <button type="button" class="primary-button w-100">Редактировать</button>
               </div>
   
-              <div class="col-md-6 pt-3 d-flex justify-content-between">
-                <div class="main-subtitle px-15 col-auto pl-0"> Итого: 2 120 000 Р</div>
-                <div class="main-subtitle px-15 col-auto"> Баланс: 1 120 000 Р</div>
-                <div class="main-subtitle px-15 col-auto"> Маржа: 120 000 Р</div>
+              <div class="col-12 pt-3 d-flex">
+                <div class="main-subtitle px-15 col-auto pl-0"> Итого: 2 120 000 Р <span>(работы)</span></div>
+                <div class="main-subtitle px-15 col-auto"> Баланс: 1 120 000 Р<span>(материалы)</span></div>
+                <div class="main-subtitle px-15 col-auto"> Приход: 120 000 Р</div>
+                <div class="main-subtitle px-15 col-auto"> Прибыль: 120 000 Р</div>
               </div>
   
             </div>
@@ -43,9 +44,10 @@
                   <div class="col-2">
                     <select class="form-control">
                                           <option selected disabled>Причина</option>
-                                          <option>1</option>
-                                          <option>1</option>
-                                          <option>1</option>
+                                          <option>Акт №1</option>
+                                          <option>Ведомость доп. работ №1</option>
+                                          <option>Оплата материалов</option>
+                                          <option>Аванс</option>
                                         </select>
                   </div>
                   <div class="col-2">
@@ -63,9 +65,8 @@
                   <div class="col-2">
                     <select class="form-control">
                                           <option selected disabled>Причина</option>
-                                          <option>1</option>
-                                          <option>1</option>
-                                          <option>1</option>
+                                          <option>Оплата материалов</option>
+                                          <option>Оплата рабочим</option>
                                         </select>
                   </div>
                   <div class="col-2">
@@ -82,6 +83,19 @@
               <table class="table table-hover">
   
                 <tbody>
+                  
+                  <tr>
+                    <td class="pl-4">+1 200 000</td>
+                    <td>Оплата материалов</td>
+                    <td>10 октября 2018</td>
+                    <td> <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
+                                  <img src="../assets/img/del.svg" alt="add-button">
+                                  <div class="remove-materials ml-1">
+                                    Удалить
+                                  </div>
+                                </button></td>
+                  </tr>
+
                   <tr>
                     <td class="pl-4">+1 200 000</td>
                     <td>Оплата материалов</td>
@@ -170,6 +184,14 @@ export default {
   padding-top: 275px;
 }
 
+.main-subtitle {
+  font-size: 1.3rem;
+   span {
+  font-size: 1rem;
+}
+}
+
+
 .add-button {
   background-color: transparent;
   border: none;
@@ -206,6 +228,10 @@ export default {
 
 .my-datepicker {
   line-height: 15px;
+}
+
+tbody tr:first-child {
+background-color: #DEFFE8;
 }
 </style>
 

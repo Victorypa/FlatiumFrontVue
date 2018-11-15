@@ -25,7 +25,7 @@
 
                 <div class="col-4 pl-0">
                  
-                   <button type="button" class="primary-button  w-100">Экспорт в PDF</button>
+                   <button type="button" class="primary-button  w-100">Экспорт</button>
                 </div>
 
                 <div class="col-4 pl-0">
@@ -141,7 +141,83 @@
             </div>
           </div>
 
-          <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4 fixed-search">
+
+<div class="col-md-12 px-5 bg pt-5">
+          <div class="row align-items-center justify-content-between">
+
+            <div class="col-6">
+              <div class="create__sum">
+                ИТОГО В ТЕКУЩЕЙ ВКЛАДКЕ: 1600 Р
+              </div>
+            </div>
+          </div>
+</div>
+
+<div class="row">
+            <div class="col-md-12 pt-4 pr-0 bg">
+              <div class="row col-12 justify-content-between add-space-block align-items-center" v-for="(form, index) in WindowsData">
+ <div class="col-3 px-0">
+                              <button class="add-space-button pl-4 active">{{ index + parseInt(1) }}</button>
+                          </div>
+                 <form class="col-md-9">
+
+                            <div class="row col-12 form-group--margin d-flex align-items-center create-spaces">
+
+                     
+                 <div class="form-group col-md-3">
+                                    <select class="form-control"
+                                            >
+                                        <option name="type">
+                                            Окно
+                                        </option>
+
+                                        <option name="type">
+                                            Дверь
+                                        </option>
+                                    </select>
+                                </div>
+                                 <div class="form-group w-85 ml-2">
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Ширина"
+                                           >
+                                </div>
+                           <div class="form-group w-85 ml-3">
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Длина"
+                           
+                                          >
+                                </div>
+                             <span class="ml-3">x</span>
+
+                              <div class="form-group w-85 ml-3">
+                                  <input type="text"
+                                         class="form-control"
+                                         placeholder="Кол-во"
+                                    
+                                         >
+                              </div>
+                                <div class="form-group col-md-2">
+                                  <div class="form-group__calc ">
+                                
+                                  </div>
+                              </div>
+                                <div class="ml-auto">
+                         <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить" @click="removeWork(index)">
+                    <img src="../assets/img/del.svg" alt="add-button">
+                  </button>
+                  </div>
+                          </div>
+                        </form>
+                      </div>
+
+                    <div class="row col-12 pl-5">
+                      <button class="add-space-button py-2" @click="addWork">+ Добавить проем </button>
+                    </div>
+                    </div>
+                    <div class="row col-12 py-4 pl-5 bg">
+          <div class="row w-100 align-items-center">
               <div class="col-2">
                   <select class="form-control">
                     <option selected disabled>Пол</option>
@@ -152,97 +228,101 @@
               <div class="col-10">
                   <form>
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Название (адрес) объекта">
+                          <input type="text" class="form-control" placeholder="Название вида работы">
                       </div>
                   </form>
               </div>
 
           </div>
 
-          <div class="row align-items-center justify-content-between px-15">
 
-            <div class="col-6 pt-5">
-              <div class="create__sum">
-                ИТОГО В ТЕКУЩЕЙ ВКЛАДКЕ: 1600 Р
-              </div>
+        <form class="row w-100 align-items-center" v-for="(service, index) in newServices">
+            <div class="col-2 py-2">
+                <select class="form-control">
+                           <option>
+                          1
+                      </option>
+                         <option>
+                          2
+                      </option>
+                </select>
             </div>
-          </div>
 
-          <div class="row px-15">
-            <div class="col-12">
-              <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
-                Проемы
-              </div>
+            <div class="col-5 py-1">
+                <div class="form-group">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Название"
+                           v-model="service.name"
+                           >
+                </div>
             </div>
-            <div class="col-12 px-0 add-space-wrapper">
-              <div class="row col-12 justify-content-between add-space-block align-items-center pr-0 mb-2">
 
-                <div class="col-5 px-0">
-                  <button class="add-space-button active">Добавить проем</button>
+            <div class="col-auto d-flex align-items-center">
+                <select class="form-control w-85" >
+                      <option>
+                          1
+                      </option>
+                         <option>
+                          2
+                      </option>
+                </select>
+                    <div class="form-group w-85 ml-4">
+                    <input type="number"
+                    min="0"
+                    class="form-control"
+                    placeholder="Цена за ед. изм."
+                    v-model="service.price"
+                    >
                 </div>
 
-                <div class="col-md-7 pl-4">
-                  <div class="form-group d-flex align-items-center create-spaces">
-                    <div class="col-3 pl-0">
-                      <select class="form-control">
-                        <option selected="" disabled="">Наименование</option>
-                        <option>name</option>
-                        <option>name</option>
-                        <option>name</option>
-                        <option>name</option>
-                      </select>
-                            </div>
-                            <input type="text" class="form-control col-md-2" placeholder="Ширина">
-                            <input type="text" class="form-control col-md-2" placeholder="Высота">
-                            <span class="pl-2">x</span>
-                            <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                            <div class="form-group__calc col-auto">-5 М<sup>2</sup></div>
-                            <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить материал">
-                    <img src="../assets/img/del.svg" alt="add-button">
-                  </button>
-                          </div>
-                        </div>
-                      </div>
+                <div class="col-auto py-1">
+                    <div class="form-check custom-control checkbox">
+                        <input type="checkbox"
+                               class="form-check-input check"
+                               :id="1"
+                     v-model="service.discount"
+                               >
+                        <label class="form-check-label d-block"  for="1">
+                            Скидка возможна
+                        </label>
                     </div>
+                </div>
+            </div>
+        </form>
+             <div class="row col-12 pt-3">
+                <button class="add-space-button add-space-button-work" @click="addNewService">+ Добавить работу</button>
+              </div>
+                    </div>
+          
 
-                    <div class="row col-12">
-                      <button class="add-space-button add-space-button_proem">+ Добавить проем </button>
-                    </div>
+                    <div class="col-md-12 pl-5 bg">
 
                     <div class="col-12">
-                      <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
+                      <div class="main-subtitle main-subtitle--fz pb-2">
                         Пол
                       </div>
                     </div>
-                    <div class="col-md-12 px-0 all-items">
-
                       <div class="row align-items-center">
                         <label class="col-md-6 mb-0">
-              <div class="form-check custom-control">
-                <input class="form-check-input" id="customCheck1" type="checkbox" checked>
-                <label class="form-check-label" for="customCheck1">
-                  
-                  Грунтовка пола
-                </label>
+                        <div class="form-check custom-control" @click='toggle = !toggle'>
+                          <input class="form-check-input" id="customCheck1" type="checkbox">
+                        <label class="form-check-label" for="customCheck1">
+                          Грунтовка пола
+                        </label>
                       </div>
                       </label>
 
                       <div class="col-md-6">
                         <div class="form-group form-group--margin d-flex align-items-center">
-                          <input type="text" class="form-control col-md-2" placeholder="Кол-во">
+                          <input type="text" class="form-control w-85" placeholder="Кол-во">
                           <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                          <input type="text" class="form-control col-md-2" placeholder="800">
+                          <input type="text" class="form-control w-85" placeholder="800" >
                           <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
                           <div class="form-group__calc col-md-auto">800
-                            Р/М<sup>2</sup></div>
-                          <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                  <img src="../assets/img/del.svg" alt="add-button">
-                  <div class="remove-materials ml-1">
-                    Удалить
-                  </div>
-                </button>
-                          <button class="add-button ml-auto" title="Добавить материалы">
-                  <img src="../assets/img/add-materials.svg" alt="add-button">
+                            Р</div>
+                          <button class="add-button ml-auto" title="Добавить материалы" >
+                  <img src="../assets/img/add-materials.svg" alt="add-button" v-show='toggle'>
                 </button>
                         </div>
                       </div>
@@ -255,9 +335,9 @@
                         </div>
                         <div class="col-6">
                           <div class="d-flex align-items-center col-12">
-                            <div class="col-4 ml-57"></div>
-                            <div class="form-group__calc col-md-auto">800
-                              Р/М<sup>2</sup></div>
+                            <div class="ml-211"></div>
+                             <div class="form-group__calc col-md-auto">800
+                            Р</div>
                           </div>
                         </div>
                       </div>
@@ -276,18 +356,113 @@
 
                     <div class="col-md-6">
                       <div class="form-group form-group--margin d-flex align-items-center">
-                        <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                        <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                        <input type="text" class="form-control col-md-2" placeholder="800">
+                          <input type="text" class="form-control w-85" placeholder="Кол-во">
+                          <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                          <input type="text" class="form-control w-85" placeholder="800">
+                        <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
+                         <div class="form-group__calc col-md-auto">800
+                            Р</div>
+                        <button class="add-button ml-auto" title="Добавить материалы">
+                      <img src="../assets/img/add-materials.svg" alt="add-button">
+                    </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" v-for="(form, index) in floorWork">
+                    <label class="col-md-6">
+              <div class="form-check custom-control">
+                <input class="form-check-input" id="customCheck3" type="checkbox">
+                <label class="form-check-label" for="customCheck3">
+                  Наименование работы
+                </label>
+                  </div>
+                  </label>
+
+                  <div class="col-md-6">
+                    <div class="form-group form-group--margin d-flex align-items-center">
+                          <input type="text" class="form-control w-85" placeholder="Кол-во">
+                          <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                          <input type="text" class="form-control w-85" placeholder="800">
+                      <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
+                      <div class="form-group__calc col-md-auto">800
+                        Р/М<sup>2</sup></div>
+                      <button class="add-button ml-auto" title="Добавить материалы">
+                      <img src="../assets/img/add-materials.svg" alt="add-button">
+                    </button>
+                    </div>
+                  </div>
+                               
+                </div>
+              </div>
+
+               <div class="col-md-12 pl-5 bg">
+
+                    <div class="col-12 pt-5">
+                      <div class="main-subtitle main-subtitle--fz pb-2">
+                        Стены
+                      </div>
+                    </div>
+                      <div class="row align-items-center">
+                        <label class="col-md-6 mb-0">
+                        <div class="form-check custom-control">
+                          <input class="form-check-input" id="customCheck1" type="checkbox">
+                          <label class="form-check-label" for="customCheck1">  
+                            Грунтовка пола
+                          </label>
+                        </div>
+                      </label>
+
+                      <div class="col-md-6">
+                        <div class="form-group form-group--margin d-flex align-items-center">
+                             <input type="text" class="form-control w-85" placeholder="Кол-во">
+                          <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                          <input type="text" class="form-control w-85" placeholder="800">
+                          <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
+                          <div class="form-group__calc col-md-auto">800
+                            Р</div>
+                          <button class="add-button ml-auto" title="Добавить материалы">
+                  <img src="../assets/img/add-materials.svg" alt="add-button">
+                </button>
+                        </div>
+                      </div>
+
+                      <div class="row col-12">
+                        <div class="col-6 pl-5 mb-3">
+                          <div class="subtitle-list">
+                            <div class="subtitle-list__item">Наименование работы 1</div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex align-items-center col-12">
+                            <div class="ml-211"></div>
+                            <div class="form-group__calc col-md-auto">800
+                              Р</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+                      <label class="col-md-6">
+              <div class="form-check custom-control">
+                <input class="form-check-input" id="customCheck2" type="checkbox">
+                <label class="form-check-label" for="customCheck2">
+                  Наименование работы
+                </label>
+                    </div>
+                    </label>
+
+                    <div class="col-md-6">
+                      <div class="form-group form-group--margin d-flex align-items-center">
+                           <input type="text" class="form-control w-85" placeholder="Кол-во">
+                          <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                          <input type="text" class="form-control w-85" placeholder="800">
                         <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
                         <div class="form-group__calc col-md-auto">800
-                          Р/М<sup>2</sup></div>
-                        <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                      <img src="../assets/img/del.svg" alt="add-button">
-                      <div class="remove-materials ml-1">
-                        Удалить
-                      </div>
-                    </button>
+                          Р</div>
+
                         <button class="add-button ml-auto" title="Добавить материалы">
                       <img src="../assets/img/add-materials.svg" alt="add-button">
                     </button>
@@ -307,103 +482,23 @@
 
                   <div class="col-md-6">
                     <div class="form-group form-group--margin d-flex align-items-center">
-                      <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                      <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                      <input type="text" class="form-control col-md-2" placeholder="800">
+                    <input type="text" class="form-control w-85" placeholder="Кол-во">
+                          <div class="inputs-caption pl-1">м<sup>2</sup></div>
+                          <input type="text" class="form-control w-85" placeholder="800">
                       <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
                       <div class="form-group__calc col-md-auto">800
-                        Р/М<sup>2</sup></div>
-                      <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                      <img src="../assets/img/del.svg" alt="add-button">
-                      <div class="remove-materials ml-1">
-                        Удалить
-                      </div>
-                    </button>
+                        Р</div>
                       <button class="add-button ml-auto" title="Добавить материалы">
                       <img src="../assets/img/add-materials.svg" alt="add-button">
                     </button>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
-              <div class="row col-12">
-                <button class="add-space-button add-space-button-work">+ Добавить работу</button>
-              </div>
-              <div class="row px-15">
 
-                <div class="col-12">
-                  <div class="main-subtitle main-subtitle--fz pt-5 pb-2">
-                    Стены
-                  </div>
-                </div>
 
-                <div class="col-md-12 px-0">
-                  <div class="row">
-
-                    <label class="col-md-6">
-                    <div class="form-check custom-control">
-                      <input class="form-check-input" id="customCheck2" type="checkbox">
-                      <label class="form-check-label" for="customCheck2">
-                        Наименование работы
-                      </label>
-                  </div>
-                  </label>
-
-                  <div class="col-md-6">
-                    <div class="form-group form-group--margin d-flex align-items-center">
-                      <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                      <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                      <input type="text" class="form-control col-md-2" placeholder="800">
-                      <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
-                      <div class="form-group__calc col-md-auto">800
-                        Р/М<sup>2</sup></div>
-                      <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                        <img src="../assets/img/del.svg" alt="add-button">
-                        <div class="remove-materials ml-1">
-                          Удалить
-                        </div>
-                      </button>
-                      <button class="add-button ml-auto" title="Добавить материалы">
-                        <img src="../assets/img/add-materials.svg" alt="add-button">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-
-                  <label class="col-md-6">
-                    <div class="form-check custom-control">
-                      <input class="form-check-input" id="customCheck2" type="checkbox">
-                      <label class="form-check-label" for="customCheck2">
-                        Наименование работы
-                      </label>
-                </div>
-                </label>
-
-                <div class="col-md-6">
-                  <div class="form-group form-group--margin d-flex align-items-center">
-                    <input type="text" class="form-control col-md-2" placeholder="Кол-во">
-                    <div class="inputs-caption pl-1">м<sup>2</sup></div>
-                    <input type="text" class="form-control col-md-2" placeholder="800">
-                    <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
-                    <div class="form-group__calc col-md-auto">800
-                      Р/М<sup>2</sup></div>
-                    <button class="add-button add-button--remove d-flex align-items-center" title="Удалить материал">
-                        <img src="../assets/img/del.svg" alt="add-button">
-                        <div class="remove-materials ml-1">
-                          Удалить
-                        </div>
-                      </button>
-                    <button class="add-button ml-auto" title="Добавить материалы">
-                        <img src="../assets/img/add-materials.svg" alt="add-button">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -413,9 +508,43 @@
 </template>
 
 <script>
+import Vue from "vue";
 import basicheader from "./partials/BasicHeader";
 import sidebar from "./partials/Sidebar";
 export default {
+  data() {
+    return {
+      WindowsData: [],
+      newServices: [],
+      floorWork: [],
+      toggle: true
+    };
+  },
+
+  methods: {
+    addNewService() {
+      this.newServices.push({
+        name: null,
+        price: null,
+        discount: null
+      });
+      console.log(this.newServices);
+    },
+
+    addFloorWork() {
+      this.floorWork.push({
+        name: null,
+        price: null
+      });
+    },
+
+    addWork() {
+      this.WindowsData.push({});
+    },
+    removeWork(i) {
+      Vue.delete(this.WindowsData, i);
+    }
+  },
   components: {
     basicheader,
     sidebar
@@ -425,6 +554,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/vars.scss";
+
+.w-85 {
+  width: 85px;
+}
 
 .fixed-part {
   position: fixed;
@@ -628,7 +761,7 @@ export default {
   .add-space {
     &-button {
       padding-left: 25px;
-      color: #ccc;
+      color: $main-color;
       background-color: transparent;
       border: none;
       cursor: pointer;
@@ -646,10 +779,6 @@ export default {
 
       &:focus {
         outline: none;
-      }
-
-      &:hover {
-        color: $main-color;
       }
     }
   }
@@ -750,8 +879,8 @@ export default {
   }
 }
 
-.ml-57 {
-  margin-left: 57px;
+.ml-211 {
+  margin-left: 211px;
 }
 
 .inputs-caption {
