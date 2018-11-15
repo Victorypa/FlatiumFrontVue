@@ -24,7 +24,7 @@
   
               <div class="col-12 pt-3 d-flex">
                 <div class="main-subtitle px-15 col-auto pl-0"> Итого: 2 120 000 Р <span>(работы)</span></div>
-                <div class="main-subtitle px-15 col-auto"> Баланс: 1 120 000 Р<span>(материалы)</span></div>
+                <div class="main-subtitle px-15 col-auto"> 1 120 000 Р<span>(материалы)</span></div>
                 <div class="main-subtitle px-15 col-auto"> Приход: 120 000 Р</div>
                 <div class="main-subtitle px-15 col-auto"> Прибыль: 120 000 Р</div>
               </div>
