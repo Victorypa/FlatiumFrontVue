@@ -13,11 +13,14 @@
             <div class="fixed-part col-10 shadow bg-white rounded">
               <div class="row align-items-center ">
 
-                <div class="col-md-8">
-                  <h2 class="main-caption">
+
+                <div class="col-md-6 d-flex align-items-end">
+                  <h2 class="main-caption col-auto">
                     Привязка материалов
                   </h2>
+                   <div class="main-subtitle ml-5">Цена:</div>
                 </div>
+               
               </div>
             </div>
 
@@ -344,6 +347,12 @@ export default {
 .subtitle-list {
   &__item {
     font-size: 0.85rem;
+  }
+}
+
+.main-caption {
+  &::after {
+    display: none;
   }
 }
 

@@ -12,6 +12,7 @@
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4",
     "vue": "^2.5.17",
+    "vue-dragscroll": "^1.8.1",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.16.0",
     "vuejs-datepicker": "^1.5.3"

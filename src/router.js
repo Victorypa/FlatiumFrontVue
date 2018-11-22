@@ -16,6 +16,7 @@ import ExtraWork from './views/ExtraWork.vue'
 import ExportExtraWork from './views/ExportExtraWork.vue'
 import Balance from './views/Balance.vue'
 import DragnDrop from './views/DragnDrop.vue'
+import WorkStages from './views/WorkStages.vue'
 
 Vue.use(Router)
 
@@ -105,5 +106,10 @@ export default new Router({
             name: 'DragnDrop',
             component: DragnDrop
         },
-    ]
+        {
+            path: '/WorkStages',
+            name: 'WorkStages',
+            component: WorkStages
+        },
+]
 })

@@ -119,7 +119,6 @@ a {
     &-list {
         text-transform: uppercase;
         cursor: pointer;
-        // @include transition;
         &:hover {
             background-color: $sidebar-hover;
         }

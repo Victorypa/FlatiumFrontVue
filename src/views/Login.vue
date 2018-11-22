@@ -58,11 +58,6 @@
 
 <style lang="scss" scoped>
 @import "../assets/scss/vars.scss";
-
-// @import "../assets/scss/mixins/font-face";
-
-// @include font-face("tahoma", "../fonts/Tahoma/Tahoma");
-
 .login {
   &-form {
     &-group {

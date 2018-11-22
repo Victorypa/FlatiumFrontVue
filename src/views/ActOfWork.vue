@@ -77,24 +77,6 @@
                           <td>100 Р/М<sup>2</sup></td>
                           <td>2800 Р</td>
                         </tr>
-                        <!-- <tr class="small-case">
-                            <th scope="row" class="w-50">Наименование 1</th>
-                            <td></td>
-                            <td>100 Р/М<sup>2</sup></td>
-                            <td>2800 Р</td>
-                          </tr>
-                                       <tr class="small-case">
-                              <th scope="row" class="w-50">Наименование 1</th>
-                            <td></td>
-                            <td>100 Р/М<sup>2</sup></td>
-                            <td>2800 Р</td>
-                          </tr>
-                                        <tr class="small-case">
-                              <th scope="row" class="w-50">Наименование 1</th>
-                            <td></td>
-                            <td>100 Р/М<sup>2</sup></td>
-                            <td>2800 Р</td>
-                          </tr> -->
                         <tr>
                           <tr>
                             <th scope="row" class="w-50 pl-1">
@@ -106,7 +88,6 @@
                               </div>
                             </th>
                             <td>28м<sup>2</sup></td>
-                            <!-- <td class="py-1 pl-1"><input class="col-4 form-control" type="text" placeholder="28м²"></td> -->
                             <td>100 Р/М<sup>2</sup></td>
                             <td>2800 Р</td>
                           </tr>
