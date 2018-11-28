@@ -27,22 +27,20 @@
               </div>
             </div>
             <div class="col-12 px-0 stages">
-              <div class="row align-items-center shadow bg-white rounded pb-3 mb-3" v-for="(form, index) in WindowsData">
+              <div class="row align-items-center shadow bg-white rounded pb-3 mb-3">
                 <div class="col-12 d-flex align-items-center justify-content-between mb-2">
                   <div class="col-md-6">
                     <div class="main-subtitle">
-                      Этап {{ index + parseInt(1) }}
+                      Этап 1
                     </div>
-                    <div class="main-subtitle">
-                      Комната 1
-                    </div>
+
                   </div>
                   <div class="col-md-5 d-flex justify-content-end align-items-center pl-0">
                     <datepicker class="my-datepicker" :language="ru"></datepicker>
                     <datepicker class="my-datepicker ml-3" :language="ru"></datepicker>
                     <div class="col-1">
                       <div class="ml-auto">
-                        <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить" @click="removeStage(index)">
+                        <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить">
                       <img src="../assets/img/del.svg" alt="add-button">
                     </button>
                       </div>
@@ -51,6 +49,9 @@
                 </div>
 
                 <div class="col-12">
+                  <div class="main-subtitle col-12">
+                    Комната 1
+                  </div>
                   <table class="table drag-table">
                     <div class="main-subtitle main-subtitle--fz col-12 pt-4">
                       Наименование (Пол,стены,потолок)
@@ -110,6 +111,89 @@
 
               </div>
             </div>
+              <div class="row align-items-center shadow bg-white rounded pb-3 mb-3" v-for="(form, index) in ListStages">
+                <div class="col-12 d-flex align-items-center justify-content-between mb-2">
+                  <div class="col-md-6">
+                    <div class="main-subtitle">
+                      Этап {{ index + parseInt(2) }}
+                    </div>
+
+                  </div>
+                  <div class="col-md-5 d-flex justify-content-end align-items-center pl-0">
+                    <datepicker class="my-datepicker" :language="ru"></datepicker>
+                    <datepicker class="my-datepicker ml-3" :language="ru"></datepicker>
+                    <div class="col-1">
+                      <div class="ml-auto">
+                        <button class="add-button add-button--remove d-flex align-items-center ml-auto" title="Удалить" @click="removeStage(index)">
+                      <img src="../assets/img/del.svg" alt="add-button">
+                    </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="main-subtitle col-12">
+                    Комната 1
+                  </div>
+                  <table class="table drag-table">
+                    <div class="main-subtitle main-subtitle--fz col-12 pt-4">
+                      Наименование (Пол,стены,потолок)
+                    </div>
+                    <tbody>
+                      <tr>
+                        <div>
+                          <draggable :list="list1" :options="{group:{ name: 'stuff'}}" @start="drag=true" @end="drag=false" :move="onMove">
+                            <div v-for="ele in list1" class="item d-flex justify-content-between">
+                              <th scope="row" class="w-50">
+                                <div class="form-check custom-control checkbox">
+                                  <input type="checkbox" class="form-check-input check" id='1'>
+                                  <label class="form-check-label d-block" for="1">{{ele.name}}</label>
+                                </div>
+                              </th>
+                              <td>{{ele.per}}</td>
+                              <td>{{ele.price}}</td>
+                              <td>{{ele.summ}}</td>
+                            </div>
+                          </draggable>
+                        </div>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-12">
+                  <div class="main-subtitle col-12">
+                    Комната 2
+                  </div>
+                </div>
+                <div class="col-12">
+                  <table class="table drag-table">
+                    <div class="main-subtitle main-subtitle--fz col-12 pt-4">
+                      Наименование (Пол,стены,потолок)
+                    </div>
+                    <tbody>
+                      <tr>
+                        <div>
+                          <draggable :list="list1" :options="{group:{ name: 'stuff'}}" @start="drag=true" @end="drag=false" :move="onMove">
+                            <div v-for="ele in list1" class="item d-flex justify-content-between">
+                              <th scope="row" class="w-50">
+                                <div class="form-check custom-control checkbox">
+                                  <input type="checkbox" class="form-check-input check" id='1'>
+                                  <label class="form-check-label d-block" for="1">{{ele.name}}</label>
+                                </div>
+                              </th>
+                              <td>{{ele.per}}</td>
+                              <td>{{ele.price}}</td>
+                              <td>{{ele.summ}}</td>
+                            </div>
+                          </draggable>
+                        </div>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
 
             <div class="row col-12">
               <button class="add-space-button py-2" @click="addStage">+ Добавить этап</button>
@@ -329,7 +413,7 @@
     },
     data() {
       return {
-        WindowsData: [],
+        ListStages: [],
         ru,
         future_index: "START",
         list4: [{
@@ -395,10 +479,10 @@
         this.future_index += ", " + event.draggedContext.futureIndex;
       },
       addStage() {
-        this.WindowsData.push({});
+        this.ListStages.push({});
       },
       removeStage(i) {
-        Vue.delete(this.WindowsData, i);
+        Vue.delete(this.ListStages, i);
       },
     }
   };
@@ -540,5 +624,8 @@
         outline: none;
       }
     }
+  }
+  .my-datepicker {
+    border-bottom: 1px solid $main-color;
   }
 </style>
