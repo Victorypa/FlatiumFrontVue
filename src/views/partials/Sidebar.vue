@@ -1,15 +1,13 @@
 <template>
-  
+
   <div class="sidebar col-2 px-0">
 
     <div class="sidebar-items">
 
       <div class="sidebar-list">
-        <a href="#">Все сметы</a>
-      </div>
-
-      <div class="sidebar-list">
-        <a href="#">Новая смета</a>
+        <router-link to="/Estimates">
+        Все сметы
+        </router-link>
       </div>
 
       <div class="sidebar-list">
@@ -24,4 +22,7 @@
 <style lang="scss" scoped>
 @import "../../assets/scss/vars.scss";
 @import "../../assets/scss/main.scss";
+.sidebar {
+  min-height: 100vh;
+}
 </style>

@@ -33,6 +33,9 @@
                     <div class="main-subtitle">
                       Этап {{ index + parseInt(1) }}
                     </div>
+                    <div class="main-subtitle">
+                      Комната 1
+                    </div>
                   </div>
                   <div class="col-md-5 d-flex justify-content-end align-items-center pl-0">
                     <datepicker class="my-datepicker" :language="ru"></datepicker>
@@ -50,7 +53,7 @@
                 <div class="col-12">
                   <table class="table drag-table">
                     <div class="main-subtitle main-subtitle--fz col-12 pt-4">
-                      Пол
+                      Наименование (Пол,стены,потолок)
                     </div>
                     <tbody>
                       <tr>
@@ -69,7 +72,37 @@
                             </div>
                           </draggable>
                         </div>
-
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-12">
+                  <div class="main-subtitle col-12">
+                    Комната 2
+                  </div>
+                </div>
+                <div class="col-12">
+                  <table class="table drag-table">
+                    <div class="main-subtitle main-subtitle--fz col-12 pt-4">
+                      Наименование (Пол,стены,потолок)
+                    </div>
+                    <tbody>
+                      <tr>
+                        <div>
+                          <draggable :list="list1" :options="{group:{ name: 'stuff'}}" @start="drag=true" @end="drag=false" :move="onMove">
+                            <div v-for="ele in list1" class="item d-flex justify-content-between">
+                              <th scope="row" class="w-50">
+                                <div class="form-check custom-control checkbox">
+                                  <input type="checkbox" class="form-check-input check" id='1'>
+                                  <label class="form-check-label d-block" for="1">{{ele.name}}</label>
+                                </div>
+                              </th>
+                              <td>{{ele.per}}</td>
+                              <td>{{ele.price}}</td>
+                              <td>{{ele.summ}}</td>
+                            </div>
+                          </draggable>
+                        </div>
                       </tr>
                     </tbody>
                   </table>

@@ -1,13 +1,13 @@
 <template>
   <div>
-  
+
     <basicheader></basicheader>
-  
+
     <div class="create">
       <div class="container-fluid px-0">
         <div class="row">
           <sidebar></sidebar>
-  
+
           <div class="col-md-10 px-0">
             <div class="row col-10 fixed-part shadow bg-white rounded align-items-center">
               <div class="pb-4 d-flex justify-content-between align-items-center w-100">
@@ -16,61 +16,41 @@
                     Создание сметы
                   </h1>
                 </div>
-  
+
                 <div class="col-md-6 d-flex px-0 align-items-center">
-  
+
                   <div class="col-4 create__sum pl-0">
                     Итого: 1600 Р
                   </div>
-  
+
                   <div class="col-4 pl-0">
-  
+
                     <button type="button" class="primary-button  w-100">Экспорт</button>
                   </div>
-  
+
                   <div class="col-4 pl-0">
                     <button type="button" class="primary-button  w-100">График</button>
                   </div>
                 </div>
               </div>
-  
+
               <div class="row align-items-center justify-content-between w-100">
-  
-                <div class="col-md-6 pl-30">
+
+                <div class="col-md-12 pl-30">
                   <form>
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Название (адрес) объекта">
                     </div>
                   </form>
                 </div>
-  
-                <div class="col-md-6 px-0">
-                  <fieldset>
-                    <div class="form-group d-flex align-items-center justify-content-around">
-                      <div class="custom-control custom-radio col-4">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                        <label class="custom-control-label" for="customRadio1">Предчистовая
-                          отделка</label>
-                      </div>
-                      <div class="custom-control custom-radio col-4">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2">Черновая отделка</label>
-                      </div>
-                      <div class="custom-control custom-radio col-4">
-                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio3">Вторичная
-                          жилплощадь</label>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
+
               </div>
-  
+
             </div>
-  
+
             <div class="carousel-wrapper">
               <div class="row align-items-center col-12">
-  
+
                 <div class="col-8 owl-carousel-wrapper">
                   <div class="owl-carousel owl-theme d-flex px-0">
                     <div class="create__features">
@@ -78,7 +58,7 @@
                         Комната
                       </div>
                     </div>
-  
+
                     <div class=" create__features">
                       <div class="create__features-name">
                         Электромонтажные
@@ -96,17 +76,17 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <button class="col-auto add-button pb-3">
                   <img src="../assets/img/plus-circle.svg" alt="add-button">
                 </button>
-  
+
                 <div class="col-2 text-right ml-auto  pl-0">
                   <button type="button" class="primary-button primary-button--outline w-100" data-toggle="modal" data-target="#myModal2">Удалить</button>
                 </div>
               </div>
             </div>
-  
+
             <div class="row align-items-center py-30 shadow bg-white rounded col-12 py-4 mb-3">
               <div class="col-6">
                 <select class="form-control">
@@ -118,7 +98,7 @@
                 </select>
               </div>
               <div class="col-6 d-flex align-items-center justify-content-between">
-  
+
                 <div class="placeholder-text ml-2" placeholder="Выс">
                   <input />
                 </div>
@@ -139,11 +119,11 @@
                 </div>
               </div>
             </div>
-  
-  
+
+
             <div class="col-md-12 px-5 bg pt-5">
               <div class="row align-items-center justify-content-between">
-  
+
                 <div class="col-6">
                   <div class="create__sum">
                     ИТОГО В ТЕКУЩЕЙ ВКЛАДКЕ: 1600 Р
@@ -151,7 +131,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row">
               <div class="col-md-12 pt-4 pr-0 bg">
                 <div class="row col-12 justify-content-between add-space-block align-items-center" v-for="(form, index) in WindowsData">
@@ -159,16 +139,16 @@
                     <button class="add-space-button pl-4 active">{{ index + parseInt(1) }}</button>
                   </div>
                   <form class="col-md-9">
-  
+
                     <div class="row col-12 form-group--margin d-flex align-items-center create-spaces">
-  
-  
+
+
                       <div class="form-group col-md-3">
                         <select class="form-control">
                                           <option name="type">
                                               Окно
                                           </option>
-  
+
                                           <option name="type">
                                               Дверь
                                           </option>
@@ -181,13 +161,13 @@
                         <input type="text" class="form-control" placeholder="Длина">
                       </div>
                       <span class="ml-3">x</span>
-  
+
                       <div class="form-group w-85 ml-3">
                         <input type="text" class="form-control" placeholder="Кол-во">
                       </div>
                       <div class="form-group col-md-2">
                         <div class="form-group__calc ">
-  
+
                         </div>
                       </div>
                       <div class="ml-auto">
@@ -198,7 +178,7 @@
                     </div>
                   </form>
                 </div>
-  
+
                 <div class="row col-12 pl-5">
                   <button class="add-space-button py-2" @click="addWork">+ Добавить проем </button>
                 </div>
@@ -219,10 +199,10 @@
                       </div>
                     </form>
                   </div>
-  
+
                 </div>
-  
-  
+
+
                 <form class="row w-100 align-items-center" v-for="(service, index) in newServices">
                   <div class="col-2 py-2">
                     <select class="form-control">
@@ -234,13 +214,13 @@
                         </option>
                   </select>
                   </div>
-  
+
                   <div class="col-5 py-1">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Название" v-model="service.name">
                     </div>
                   </div>
-  
+
                   <div class="col-auto d-flex align-items-center">
                     <select class="form-control w-85">
                         <option>
@@ -253,7 +233,7 @@
                     <div class="form-group w-85 ml-4">
                       <input type="number" min="0" class="form-control" placeholder="Цена за ед. изм." v-model="service.price">
                     </div>
-  
+
                     <div class="col-auto py-1">
                       <div class="form-check custom-control checkbox">
                         <input type="checkbox" class="form-check-input check" :id="1" v-model="service.discount">
@@ -268,10 +248,10 @@
                   <button class="add-space-button add-space-button-work" @click="addNewService">+ Добавить работу</button>
                 </div>
               </div>
-  
-  
+
+
               <div class="col-md-12 pl-5 bg">
-  
+
                 <div class="col-12">
                   <div class="main-subtitle main-subtitle--fz pb-2">
                     Пол
@@ -287,7 +267,7 @@
                           <div class="ml-auto edit">Ред.</div>
                 </div>
                 </label>
-  
+
                 <div class="col-md-6">
                   <div class="form-group form-group--margin d-flex align-items-center">
                     <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -301,7 +281,7 @@
                   </button>
                   </div>
                 </div>
-  
+
                 <div class="row col-12">
                   <div class="col-6 pl-5 mb-3">
                     <div class="subtitle-list">
@@ -317,9 +297,9 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="row">
-  
+
                 <label class="col-md-6">
                 <div class="form-check custom-control">
                   <input class="form-check-input" id="customCheck2" type="checkbox">
@@ -328,7 +308,7 @@
                   </label>
               </div>
               </label>
-  
+
               <div class="col-md-6">
                 <div class="form-group form-group--margin d-flex align-items-center">
                   <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -343,7 +323,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row" v-for="(form, index) in floorWork">
               <label class="col-md-6">
                 <div class="form-check custom-control">
@@ -353,7 +333,7 @@
                   </label>
             </div>
             </label>
-  
+
             <div class="col-md-6">
               <div class="form-group form-group--margin d-flex align-items-center">
                 <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -367,12 +347,12 @@
                       </button>
               </div>
             </div>
-  
+
           </div>
         </div>
-  
+
         <div class="col-md-12 pl-5 bg">
-  
+
           <div class="col-12 pt-5">
             <div class="main-subtitle main-subtitle--fz pb-2">
               Стены
@@ -382,12 +362,12 @@
             <label class="col-md-6 mb-0">
                           <div class="form-check custom-control">
                             <input class="form-check-input" id="customCheck1" type="checkbox">
-                            <label class="form-check-label" for="customCheck1">  
+                            <label class="form-check-label" for="customCheck1">
                               Грунтовка пола
                             </label>
           </div>
           </label>
-  
+
           <div class="col-md-6">
             <div class="form-group form-group--margin d-flex align-items-center">
               <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -401,7 +381,7 @@
                   </button>
             </div>
           </div>
-  
+
           <div class="row col-12">
             <div class="col-6 pl-5 mb-3">
               <div class="subtitle-list">
@@ -417,9 +397,9 @@
             </div>
           </div>
         </div>
-  
+
         <div class="row">
-  
+
           <label class="col-md-6">
                 <div class="form-check custom-control">
                   <input class="form-check-input" id="customCheck2" type="checkbox">
@@ -428,7 +408,7 @@
                   </label>
         </div>
         </label>
-  
+
         <div class="col-md-6">
           <div class="form-group form-group--margin d-flex align-items-center">
             <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -437,14 +417,14 @@
             <div class="inputs-caption pl-1">Р/м<sup>2</sup></div>
             <div class="form-group__calc col-md-auto">800 Р
             </div>
-  
+
             <button class="add-button ml-auto" title="Добавить материалы">
                         <img src="../assets/img/add-materials.svg" alt="add-button">
                       </button>
           </div>
         </div>
       </div>
-  
+
       <div class="row">
         <label class="col-md-6">
                 <div class="form-check custom-control">
@@ -454,7 +434,7 @@
                   </label>
       </div>
       </label>
-  
+
       <div class="col-md-6">
         <div class="form-group form-group--margin d-flex align-items-center">
           <input type="text" class="form-control w-85" placeholder="Кол-во">
@@ -468,17 +448,17 @@
                       </button>
         </div>
       </div>
-  
+
     </div>
   </div>
   </div>
-  
-  
+
+
   </div>
   </div>
   </div>
   </div>
-  
+
   </div>
 </template>
 
@@ -495,7 +475,7 @@
         toggle: true
       };
     },
-  
+
     methods: {
       addNewService() {
         this.newServices.push({
@@ -505,14 +485,14 @@
         });
         console.log(this.newServices);
       },
-  
+
       addFloorWork() {
         this.floorWork.push({
           name: null,
           price: null
         });
       },
-  
+
       addWork() {
         this.WindowsData.push({});
       },
@@ -532,14 +512,14 @@
   .w-85 {
     width: 85px;
   }
-  
+
   .fixed-part {
     position: fixed;
     padding-bottom: 35px;
     padding-top: 85px;
     z-index: 999;
   }
-  
+
   .create {
     .form-check {
       &-input:checked~ {
@@ -715,7 +695,7 @@
       }
     }
   }
-  
+
   .owl-carousel {
     padding-left: 15px;
     .owl {
@@ -731,7 +711,7 @@
       }
     }
   }
-  
+
   .form-check {
     &-label {
       @include transition;
@@ -776,7 +756,7 @@
       }
     }
   }
-  
+
   .placeholder-text {
     width: 105px;
     position: relative;
@@ -797,16 +777,16 @@
       }
     }
   }
-  
+
   .ml-211 {
     margin-left: 211px;
   }
-  
+
   .inputs-caption {
     font-size: 0.75rem;
     color: #ccc;
   }
-  
+
   .fixed-search {
     &.active {
       position: fixed;
