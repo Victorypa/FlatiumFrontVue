@@ -432,14 +432,14 @@
           <div class="col-12 d-flex align-items-center justify-content-end">
             <div class="col-md-2">
               <select class="w-100 form-control">
-                <option value="Этап 1">Этап 1</option>
-                <option value="Этап 2">Этап 2</option>
-                <option value="Этап 3">Этап 3</option>
-                <option value="Этап 4">Этап 4</option>
+                <option value="Спринт 1">Спринт 1</option>
+                <option value="Спринт 2">Спринт 2</option>
+                <option value="Спринт 3">Спринт 3</option>
+                <option value="Спринт 4">Спринт 4</option>
               </select>
             </div>
             <div class="col-md-2">
-              <button type="button" class="primary-button w-100">Добавить</button>
+              <button type="button" class="primary-button w-100">Добавить в спринт</button>
             </div>
           </div>
         </div>
