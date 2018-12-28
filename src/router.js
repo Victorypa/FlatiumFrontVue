@@ -17,6 +17,8 @@ import ExportExtraWork from './views/ExportExtraWork.vue'
 import Balance from './views/Balance.vue'
 import DragnDrop from './views/DragnDrop.vue'
 import WorkStages from './views/WorkStages.vue'
+import TheMainTableList from './views/TheMainTableList.vue'
+
 
 Vue.use(Router)
 
@@ -110,6 +112,11 @@ export default new Router({
             path: '/WorkStages',
             name: 'WorkStages',
             component: WorkStages
+        },
+        {
+            path: '/TheMainTableList',
+            name: 'TheMainTableList',
+            component: TheMainTableList
         },
 ]
 })
